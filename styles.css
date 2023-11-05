@@ -28,6 +28,7 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
      transition: 0.25s ease;
+     overflow-x: hidden;
  
 } 
 
