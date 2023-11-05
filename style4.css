@@ -653,7 +653,9 @@ footer .right .location {
 
 /* 2xl */
 @media (max-width:1327px){ 
-    
+    .down {
+        max-width: 90%;
+       }
 }
 
 
@@ -688,6 +690,15 @@ footer .right .location {
 /* md */
 
 
+@media (max-width:950px){
+
+    .header {
+        scale: 0.8;
+        transition: 0.25s ease;
+        margin-top: 70px !important;
+        
+    }
+}
 @media (max-width:750px){
 
     .ibar {
@@ -744,6 +755,9 @@ footer .right .location {
     body {
         font-weight: 15px;
      
+    }
+    .header{
+        margin-left: 5px;
     }
     
 }

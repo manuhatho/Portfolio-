@@ -567,7 +567,9 @@ footer .right .location {
 
 /* 2xl */
 @media (max-width:1327px){
-   
+   .down {
+    max-width: 90%;
+   }
     
 }
 
@@ -578,6 +580,7 @@ footer .right .location {
         font-weight: 20px;
     }
     
+    
 }
 
 /* lg */
@@ -585,6 +588,12 @@ footer .right .location {
 @media (max-width:950px){
     body {
         font-weight: 19px;    
+    }
+    .header {
+        scale: 0.8;
+        transition: 0.25s ease;
+        margin-top: 70px !important;
+        
     }
 
     header nav ul{
@@ -660,5 +669,18 @@ footer .right .location {
         font-weight: 15px;
      
     }
+    .header{
+        margin-left: 5px;
+    }
+   .hero-Page .content img{
+        height: 200px;
+       
+    }
     
+}
+
+@media (max-width:280px){
+   body {
+  
+   overflow-X: hidden;
 }
