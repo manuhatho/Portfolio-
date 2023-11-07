@@ -759,43 +759,7 @@ footer .right .location {
         padding-top:300px;
     }
 }
-@media (max-width:750px){
 
-    .ibar {
-        display: inline-block;
-    }
-
-    header nav{ 
-       
-       
-    }
-           
-        header nav ul {
-            position: fixed;
-            top: 68px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            display: block;
-            background-color: rgba(0, 0, 0, 0.671);
-            width: 100%;
-            max-width: 90%;
-            border-radius: 0 0 20px 20px;
-            display: none;
-            /* opacity: 0; */
-            transition: 0.5s;
-            /* transform:translateY(-200px); */
-           
-            
-           
-        }
-        header nav ul li{
-            width: 100%;
-            padding: 8px;
-        }
-   
-  
-}
 @media (max-width:768px){
     body {
         font-weight: 18px;
@@ -821,6 +785,18 @@ footer .right .location {
     }
     
 }
+
+@media (max-width:375px){
+    .footer .content {
+        font-size: 10px;
+    }
+}
+@media (max-width:280px){
+    .footer .content {
+        font-size: 7px;
+    }
+}
+
 
 
 /* PAGE Wd------------------------------------------------------------ */

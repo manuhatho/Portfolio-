@@ -535,7 +535,7 @@ footer .right .location {
        bottom: 20px;
     }
 
-    .bar
+    
 }   
 @media (max-height:417px){
     .hero-content {
@@ -560,6 +560,7 @@ footer .right .location {
 
 
 /* sm */
+
 @media (max-width:640px){
     body {
         font-weight: 16px;
@@ -582,6 +583,16 @@ footer .right .location {
     }
 }
 
+@media (max-width:375px){
+    .footer .content {
+        font-size: 10px;
+    }
+}
+@media (max-width:280px){
+    .footer .content {
+        font-size: 7px;
+    }
+}
 
 
 /* PAGE MY WORK */
