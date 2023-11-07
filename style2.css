@@ -641,6 +641,7 @@ footer .right .location {
     .hero-btn{
        bottom: 20px;
     }
+  
 }   
 @media (max-height:417px){
     .hero-content {
@@ -721,4 +722,14 @@ footer .right .location {
    body {
   
    overflow-X: hidden;
+}
+.hero-Page .content img{
+    height: 100px;
+   
+}
+
+.hero-Page .content img{
+    height: 100px;
+   
+}
 }

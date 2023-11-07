@@ -783,6 +783,11 @@ footer .right .location {
     .header{
         margin-left: 5px;
     }
+    .gallery-1 img{
+        height: 200px;
+       
+    }
+    
     
 }
 
@@ -795,6 +800,11 @@ footer .right .location {
     .footer .content {
         font-size: 7px;
     }
+    .gallery-1 img{
+        height: 100px;
+       
+    }
+    
 }
 
 

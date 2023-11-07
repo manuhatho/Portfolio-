@@ -793,6 +793,10 @@ footer .right .location {
     .header{
         margin-left: 5px;
     }
+    .gallery-1 img{
+        height: 200px;
+       
+    }
     
 }
 
@@ -811,8 +815,15 @@ footer .right .location {
 @media (max-width:280px){
     body {
    
+        
     overflow-X: hidden;
  }
+
+ .gallery-1 img{
+    height: 100px;
+   
+}
+
 
 /* PAGE Wd------------------------------------------------------------ */
 
