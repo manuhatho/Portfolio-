@@ -397,8 +397,7 @@ footer .right .location {
         text-align: center;
         position: relative;
         bottom:100px;
-       
-
+        
     }
     .img {
         display: initial;
@@ -420,7 +419,7 @@ footer .right .location {
         display: initial;
         width: 100%;
         max-width: 90%;
-        height: 100px;
+        height: 50px;
         background-color: rgba(0, 0, 0, 0.863);
        position: fixed;
        margin: 0 auto;
@@ -437,7 +436,7 @@ footer .right .location {
         align-items: center;
         justify-content: center;
         height: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
     
     }
     
@@ -463,7 +462,9 @@ footer .right .location {
 
 /* lg */
 
-@media (max-width:1024px){
+@media (max-width:1024px),
+(max-height:739px){
+
     body {
         font-weight: 19px;
        height: 500px;
@@ -539,6 +540,45 @@ footer .right .location {
     }
     
 }
+@media (max-height:747px){
+    .hero-content{
+        padding-top: 160px;
+    
+    }
+    body{
+        background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
+        }   
+}
+
+@media (max-height:560px){
+    body {
+         background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
+    }
+    .hero-btn{
+       bottom: 20px;
+    }
+}   
+@media (max-height:417px){
+    .hero-content {
+        margin-top: 230px;
+    }
+    .down{
+        display: none;
+    }
+    .hero-btn{
+        top: 30px;
+        scale: 0.7;
+        
+     }
+    
+}   
+
+@media (max-height:300px){
+    .hero-content{
+        padding-top:300px;
+    }
+}
+
 
 /* sm */
 @media (max-width:640px){
@@ -559,9 +599,10 @@ footer .right .location {
         background-image: none;
     }
     .hero-content {
-        margin-top: 50px;
+        margin-top: 150px;
     }
 }
+
 
 
 /* PAGE MY WORK */
