@@ -72,7 +72,7 @@ header {
     border-radius: 0px 0px 20px 20px;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 98;
     
 }
 
@@ -86,7 +86,9 @@ header .logo font {
     color: rgb(255, 0, 68);
 }
 
-
+header .logo {
+    z-index: 99;
+}
 
 
 nav ul {
@@ -96,11 +98,11 @@ nav ul {
 }
 header nav ul li{
     
-    margin:0 10px;
     width: 128px;
     padding: 3px 0;
     background-size: 200% auto;
     transition: 0.5s ;
+    text-align: center;
   
 }
 header nav ul li:hover{
@@ -114,9 +116,9 @@ header nav ul li:hover{
 header nav ul a {
     font-family: "hero";
     color: rgb(255, 255, 255);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-transform: uppercase;
     transition: 0.25s;
 }
@@ -125,8 +127,49 @@ header nav ul a:hover {
     
 }
 
+
+.bar-menu {
+    height: 30px;
+    width: 30px;
+    z-index: 999;
+    display: none;
+    
+}
+
+.barD, .bar-menu::before, .bar-menu::after {
+    content:'';
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin-top:5px;
+    display: block;
+    transition: 0.4s;
+}
+
+.bar-menu.dropmenu::before {
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+.bar-menu.dropmenu::after {
+    transform: rotate(45deg) translate(-6px,-7px);
+}
+
+.bar-menu.dropmenu .barD{
+    opacity: 0;
+    
+}
+
+.navdrop{
+    display: none;
+}
+
+
 .bar {
-    border: 1px solid rgba(255, 255, 255, 0.68);
+    border-left: 1px solid rgba(255, 255, 255, 0.68);
+}
+.bar2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.68);
+
+    
 }
 
 .hero {
@@ -209,7 +252,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 9999;
 
 
 }
@@ -277,89 +320,6 @@ footer .right .location {
     display: none;
 }
 
-
-.show{
-  transform: translateY(0px);
-  opacity: 1 !important;
-  display: inline-block !important;
-}
-.disapear{
-  transform: translateY(-200px);
-  opacity: 0;
-  
- 
-
-}
-.barDi {
-    opacity: 0 !important;
-    display: none !important;
-   
-    
-}
-.barVi {
-    opacity:1 !important;
-    display: inline-block !important;
-    
-}
-.crossVi {
-    display:inline-block !important;
-    opacity:1 !important;
-}
-
-.crossDi {
-    opacity:0 !important;
-    display: none !important;
-}
-
-.ibar{
-    scale: 1.4;
-    position: absolute;
-    right:20px;
-    top: 25px;
-    transition: 0.25s ease;
-    color: white;
-    display: none;
-
-}
-.ibar .fa-bars{
-    /* scale: 1.4; */
-    position: absolute;
-    right:0px;
-    top: -9px;
-    transition: 0.25s ease;
-    color: white;
-    /* display: none; */
-
-}
-
-.ibar .fa-bars {
-    transition: 0.3s;
-    
-}
-
-.ibar .fa-xmark {
-    position: absolute;
-    right: 1px;
-    top: -10px;
-    color: rgb(255, 255, 255);
-    display: none;
-    z-index: 9999;
-    transition: 0.3s;
-    /* opacity: 0; */
-}
-
-.fa-xmark:active {
-    color: rgb(255, 0, 68);
-      
-}
-
-
-.fa-bars:active {
-    transform: rotate(45deg);
-      color: rgb(255, 0, 68);
-
-    
-}
 
 
 
@@ -493,40 +453,57 @@ footer .right .location {
 
 @media (max-width:750px){
 
-    .ibar {
-        display: inline-block;
-    }
-
-    header nav{ 
-       
-       
-    }
-           
-        header nav ul {
-            position: fixed;
-            top: 68px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            display: block;
-            background-color: rgba(0, 0, 0, 0.671);
-            width: 100%;
-            max-width: 90%;
-            border-radius: 0 0 20px 20px;
-            display: none;
-            /* opacity: 0; */
-            transition: 0.5s;
-            /* transform:translateY(-200px); */
-           
-            
-           
-        }
-        header nav ul li{
-            width: 100%;
-            padding: 8px;
-        }
+.navdrop.drop{
+    display: initial;
+    
+}        
+.navdrop{
+    position: fixed;
+    padding-top:155px;
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    background-color: rgba(0, 0, 0, 0.994);
+    transition: 0.24s;
+    
    
+}
+
+
+.navdrop ul{
+    display: block;
+    
+
+    
+
   
+    
+}
+.navdrop ul li{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+   
+    
+  .navdrop a {
+    color: white;
+  }  
+
+      .bar-menu {
+        display: inline-block;
+      }
+
+      header #nav1 {
+        display: none;
+      }
+   
 }
 @media (max-width:768px){
     body {
@@ -550,13 +527,15 @@ footer .right .location {
         }   
 }
 
-@media (max-height:560px){
+@media (max-height:561px){
     body {
          background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
     }
     .hero-btn{
        bottom: 20px;
     }
+
+    .bar
 }   
 @media (max-height:417px){
     .hero-content {

@@ -1,13 +1,15 @@
-const footerVisible = document.querySelector('.nav-link3');
-// console.log(footerVisible);
+const footerVisible = document.querySelectorAll('.nav-link3');
+console.log(footerVisible);
 const footer = document.querySelector('footer');
 // console.log(footer);
 
-footerVisible.addEventListener("click", ()=> {
-    console.log('click');
-    footer.classList.toggle("footer-toggle");
-    
+footerVisible.forEach((contact, index)=>{
+    contact.addEventListener('click', function(){
+        footer.classList.toggle('footer-toggle')
+    })
 })
+    
+
 
 const buttonV = document.querySelectorAll('#button-v');
 // console.log(buttonV);
@@ -48,49 +50,14 @@ buttonV2.forEach((button, index) => {
 
 })
 
-const menu = document.getElementById('menu');
-console.log(menu);
-const bar = document.querySelector(".fa-bars");
-// console.log(bar);
-const cross = document.querySelector(".fa-xmark");
-// console.log(cross);
 
+const drop_menu = document.querySelector(".bar-menu");
+// console.log(drop_menu);
+const navlist = document.querySelector(".navdrop")
+// console.log(navlist);
 
-
-
-// bar.addEventListener("click",()=> {
-//     console.log('click')
-//     menu.classList.add('show');
-//     bar.classList.add('barDi');
-//     cross.classList.add('crossVi');
-  
- 
-// })
-
-// cross.addEventListener("click", ()=> {
-//     console.log('click2')
-//     menu.classList.toggle('disapear');
-        
-//     cross.classList.toggle('crossDi')
-//     bar.classList.toggle('barVi')
-    
-// })
-
-bar.addEventListener("click",()=> {
-    console.log('click')
-    menu.style.display ='inline-block';
-    bar.style.display = 'none';
-    cross.style.display = "inline-block";
-  
- 
+drop_menu.addEventListener("click",function() {
+    console.log('click');
+    drop_menu.classList.toggle('dropmenu');
+    navlist.classList.toggle('drop');
 })
-
-cross.addEventListener("click", ()=> {
-    console.log('click2')
-    menu.style.display ='none';
-    bar.style.display = 'inline-block';
-    cross.style.display= 'none';
-})
-
-
-
