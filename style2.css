@@ -134,7 +134,7 @@ header nav ul li a:hover{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: rgb(245, 35, 98);
+    background-color: rgb(0, 0, 0);
     border-radius: 2px;
     margin-bottom: 6px;
     transition: 0.4s;
@@ -144,7 +144,7 @@ header nav ul li a:hover{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: rgb(20, 172, 231);
+    background-color: rgb(0, 0, 0);
     border-radius: 2px;
     /* margin-top: 6px; */
     transition: 0.4s;
@@ -276,7 +276,7 @@ header nav ul li a:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 98;
     transform: translateY(100px);
     transition: 0.4s ease; 
     
@@ -286,6 +286,7 @@ footer {
     width: 100%;
     max-width: 90%;
      margin: 0 auto; 
+  
     
 }
 
@@ -834,7 +835,7 @@ footer .right .location {
 
 
 .hero-Page .content button{
-    background-color: black;
+    background-color: rgb(225, 17, 17);
     color: white;
     font-family: "hero";
     padding:15px;
@@ -844,9 +845,13 @@ footer .right .location {
     border: none;
     cursor: pointer;
     transition: 0.25s ease;
-
+    margin-bottom: 100px;
     
 }
+
+
+   
+
 .hero-Page .content button:hover{
     background-color:rgba(0, 57, 181, 0.545);
     transform: translateY(-5px);
@@ -866,7 +871,7 @@ footer .right .location {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 97;
    
 }
 .down p {
