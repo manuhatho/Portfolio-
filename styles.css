@@ -290,7 +290,7 @@ footer {
     width: 100%;
     max-width: 90%;
      margin: 0 auto; 
-    z-index: 8;
+    
     
 }
 
@@ -526,8 +526,9 @@ footer .right .location {
     display: flex!important;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 
-    /* margin-right:43px ; */
+
 
     
 }
@@ -541,7 +542,7 @@ footer .right .location {
     border: none;
     color: white;
     transition: 0.25s;
-    z-index: 9;
+   
     
 }
 
