@@ -254,9 +254,10 @@ header nav ul li a:hover{
     display: none;
 }
 
-.footer.footer-toggle{
+ .footer.footer-toggle {
     opacity: 1;
     transform: translateY(0);
+   
 }
 
 
@@ -282,10 +283,14 @@ header nav ul li a:hover{
     
 }
 
+
+  
+
 footer {
     width: 100%;
     max-width: 90%;
      margin: 0 auto; 
+    z-index: 8;
     
 }
 
