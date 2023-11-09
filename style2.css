@@ -905,7 +905,7 @@ footer .right .location {
 
 @media (max-width:1280px){
     body {
-        font-weight: 20px;
+        font-weight: 20px !important;
     }
     
     
@@ -915,7 +915,7 @@ footer .right .location {
 
 @media (max-width:950px){
     body {
-        font-weight: 19px;    
+        font-weight: 19px!important;    
     }
     .header {
         scale: 0.8;
@@ -938,56 +938,6 @@ footer .right .location {
 
 @media (max-width:750px){
 
-    .navdrop.drop{
-        display: initial;
-        
-    }        
-    .navdrop{
-        position: fixed;
-        padding-top:155px;
-        width: 100%;
-        max-width: 90%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin:0 auto;
-        background-color: rgba(0, 0, 0, 0.994);
-        transition: 0.24s;     
-       
-    }
-    
-    
-    .navdrop ul{
-        display: block;
-
-        
-    
-        
-    
-      
-        
-    }
-    .navdrop ul li{
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        
-    }
-    
-       
-        
-      .navdrop a {
-        color: white;
-      }  
-    
-          .bar-menu {
-            display: inline-block;
-          }
-    
-          header #nav1 {
-            display: none;
-          }
        
     }
 
@@ -996,15 +946,11 @@ footer .right .location {
         padding-top: 160px;
     
     }
-    body{
-        background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
-        }   
+
 }
 
 @media (max-height:560px){
-    body {
-         background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
-    }
+   
     .hero-btn{
        bottom: 20px;
     }
@@ -1047,7 +993,7 @@ footer .right .location {
 /* sm */
 @media (max-width:640px){
     body {
-        font-weight: 16px;
+        font-weight: 16px!important;
         
     }
    
@@ -1056,7 +1002,7 @@ footer .right .location {
 /* xs */
 @media (max-width:475px){
     body {
-        font-weight: 15px;
+        font-weight: 15px !important;
      
     }
     .header{
@@ -1075,12 +1021,12 @@ footer .right .location {
 
 @media (max-width:375px){
     .footer .content {
-        font-size: 10px;
+        font-size: 10px !important;
     }
 }
 @media (max-width:280px){
     .footer .content {
-        font-size: 7px;
+        font-size: 7px !important;
     }
 }
 
