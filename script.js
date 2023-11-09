@@ -86,7 +86,7 @@ window.addEventListener("scroll", function() {
 })
 
 
-// console.log(homeImg);
-// document.oncontextmenu = function(){
-//     return false;
-// }
+ console.log(homeImg);
+ document.oncontextmenu = function(){
+     return false;
+ }

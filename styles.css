@@ -49,6 +49,10 @@ main {
     
 }
 
+.no-select {
+user-select:none;
+}
+
 header {
     width: 100%;
     max-width: 90%;
