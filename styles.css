@@ -347,6 +347,29 @@ footer .right .location {
 }
 
 
+footer .right .location {
+    margin-left: 29px;
+ }
+ 
+ .fa-brands {
+     color: white;
+     scale: 1.2;
+     margin: 0 5px;
+ }
+ .fa-location-dot{
+     color: white;
+     position: relative;
+     bottom: 27px;
+     margin-left: 22px;
+     scale: 1.2;
+ }
+ 
+ .fa-download{
+     color: rgb(0, 0, 0) ;
+ 
+ }
+
+
 
 
 
@@ -544,6 +567,8 @@ footer .right .location {
     footer h2, p {
         font-size: 18px ;
     }
+
+
 
 }
 /* md */
