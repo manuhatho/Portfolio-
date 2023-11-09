@@ -286,12 +286,15 @@ header nav ul li a:hover{
 
   
 
+footer.footer-toggle {
+    height: 100%;
+  
+    
+    
+}
 footer {
-    width: 100%;
-    max-width: 90%;
-     margin: 0 auto; 
-    
-    
+    height: 0;
+  transition: 0.4s;
 }
 
 

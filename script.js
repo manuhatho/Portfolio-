@@ -1,11 +1,14 @@
 const footerVisible = document.querySelectorAll('.nav-link3');
 console.log(footerVisible);
 const footer = document.querySelector('.footer');
+const Mfooter = document.querySelector('footer');
+// console.log(Mfooter);
 // console.log(footer);
 
 footerVisible.forEach((contact, index)=>{
     contact.addEventListener('click', function(){
         footer.classList.toggle('footer-toggle')
+        Mfooter.classList.toggle('footer-toggle')
     })
 })
     
