@@ -1,6 +1,6 @@
 const footerVisible = document.querySelectorAll('.nav-link3');
 console.log(footerVisible);
-const footer = document.querySelector('footer');
+const footer = document.querySelector('.footer');
 // console.log(footer);
 
 footerVisible.forEach((contact, index)=>{
@@ -51,13 +51,39 @@ buttonV2.forEach((button, index) => {
 })
 
 
-const drop_menu = document.querySelector(".bar-menu");
-// console.log(drop_menu);
-const navlist = document.querySelector(".navdrop")
-// console.log(navlist);
+const bar = document.querySelector(".barmenu");
+// console.log(bar);
+const nav = document.querySelector(".nav2");
+// console.log(nav);
+const header = document.querySelector("header");
 
-drop_menu.addEventListener("click",function() {
-    console.log('click');
-    drop_menu.classList.toggle('dropmenu');
-    navlist.classList.toggle('drop');
+var scroolTopValue = 400;
+
+nav.scrollTop = scroolTopValue;
+
+bar.addEventListener("click", function() {
+    // console.log('click');
+    bar.classList.toggle("active");
+    nav.classList.toggle("active");
+    header.classList.toggle("active");
+
+});
+
+
+
+window.addEventListener("scroll", function() {
+    // console.log('scroll');
+    if (window.scrollY > 0) {
+        header.style.background = "white";
+    }
+    else {
+        header.style.background = "transparent";
+    }
+
 })
+
+
+// console.log(homeImg);
+// document.oncontextmenu = function(){
+//     return false;
+// }

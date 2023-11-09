@@ -1,18 +1,18 @@
 @font-face {
-    font-family:"cake";
+    font-family: "cake";
     src: url(./assets/Fonts/Cake\ Mania.ttf);
 }
 @font-face {
-    font-family:"caviar";
+    font-family: "caviar";
     src: url(./assets/Fonts/CaviarDreams.ttf);
 }
 @font-face {
-    font-family:"hero";
+    font-family: "hero";
     src: url(./assets/Fonts/Hero-Regular.ttf);
 }
 
-*{
-    margin: 0;
+* {
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -20,198 +20,247 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100%;
     min-height: 110vh;
-    background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-   
+    font-size: 19px;
+    transition: 0.25s;
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
+    background: rgb(148, 141, 141);
+    width: 8px;
+   
  
-background-color: rgb(163, 160, 160);
-width: 10px;
 }
-
-body::-webkit-scrollbar-thumb {
-    background:linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
-    border-radius: 10px;
-    width: 3px;
-    
-   
-}
-body::-webkit-scrollbar-track-piece {
-    background-color: rgb(95, 84, 84); 
-}
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(245, 35, 98);
+            border-radius: 40px;
+            
+        }
 
 
 
-.main {
+
+main {
     width: 100%;
-    height: 100%;
     max-width: 90%;
-     margin: 0 auto;  
-   
+    height: 100%;
+    margin: 0 auto;
+    
 }
 
 header {
-    
-    background-color: rgba(0, 0, 0, 0.714);
     width: 100%;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size:20px;
-    padding: 18px;
-    box-shadow: 1px 5px 5px rgb(0,0,0,0.5);
-    border: none;
-    border-radius: 0px 0px 20px 20px;
-    position: fixed;
+    padding: 10px 0;
+    margin: auto;
+    position: sticky ;
     top: 0;
-    z-index: 98;
-    
+    z-index: 99;
+   
 }
+header {
+    display: flex;
+    align-items: center;
 
-header .logo a{
+}
+header .logo{
     font-family: "cake";
     font-size: 2.5rem;
-    color: white;
-}
-
-header .logo font {
-    color: rgb(255, 0, 68);
-}
-
-header .logo {
+    padding: 10px;
     z-index: 99;
+    
+}
+
+.no-select {
+    user-select: none;
+}
+header .logo, .fo{
+    color: black;
+}
+header .logo .red{
+    color: rgb(245, 35, 98);
 }
 
 
-nav ul {
+header nav {
     display: flex;
-    
-    
+    justify-content: center;
+    align-items: center;
+    font-family: "caviar";
+    font-size: 19px;
+}
+
+header .nav-link{
+    padding: 10px 25px;
+    border-radius: 40px;
+    transition: 0.25s ease;
+}
+header .nav-link:hover{
+    background-color: rgb(255, 6, 81);
+}
+
+header .first{
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header nav ul li{
-    
-    width: 128px;
-    padding: 3px 0;
-    background-size: 200% auto;
-    transition: 0.5s ;
-    text-align: center;
-  
-}
-header nav ul li:hover{
-    background-position: right center;
-    background-image: linear-gradient(to right, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
-    box-shadow: 0px 5px 5px rgba(14, 3, 3, 0.343);
+    padding: 0 40px;
    
-
 }
 
-header nav ul a {
-    font-family: "hero";
-    color: rgb(255, 255, 255);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    text-transform: uppercase;
-    transition: 0.25s;
+header nav ul li a{
+   color: black; 
 }
-header nav ul a:hover {
-    color: rgb(0, 0, 0);
-    
+header nav ul li a:hover{
+   color:white; 
 }
-
-
-.bar-menu {
-    height: 30px;
-    width: 30px;
-    z-index: 999;
+.barmenu {  
+    height: 35px;
+    width: 35px;
     display: none;
-    
 }
 
-.barD, .bar-menu::before, .bar-menu::after {
-    content:'';
-    height: 4px;
-    width: 100%;
-    background-color: white;
-    margin-top:5px;
+.barmenu::before {
+    content: "";
     display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(245, 35, 98);
+    border-radius: 2px;
+    margin-bottom: 6px;
     transition: 0.4s;
 }
-
-.bar-menu.dropmenu::before {
-    transform: rotate(-45deg) translate(-6px,6px);
+.barmenu::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(20, 172, 231);
+    border-radius: 2px;
+    /* margin-top: 6px; */
+    transition: 0.4s;
 }
-.bar-menu.dropmenu::after {
-    transform: rotate(45deg) translate(-6px,-7px);
+.barmenu .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    transition: 0.4s;
+    z-index:99;
 }
 
-.bar-menu.dropmenu .barD{
+.barmenu.active::before {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: rgb(245, 35, 98);
+}
+.barmenu.active::after {
+    transform: rotate(45deg) translate(-7px, -6px);
+    background-color: rgb(20, 172, 231)
+}
+
+.barmenu.active .bar {
     opacity: 0;
-    
 }
 
-.navdrop{
+.nav2 {
     display: none;
 }
 
 
-.bar {
-    border-left: 1px solid rgba(255, 255, 255, 0.68);
-}
-.bar2 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.68);
-
-    
-}
 
 .hero {
-    
     width: 100%;
     height: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    font-size: 20px;
-    font-family: "caviar";
-    font-weight: 800;
 }
 
-.hero .hello font {
-    font-size: 2rem;
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.heroContainer .left h1 {
+    font-size:2rem !important;
+    line-height: 3.2rem;
+    background: -webkit-linear-gradient(45deg, rgb(237, 27, 90)0%, rgb(0, 185, 246)60%,rgb(255, 47, 227)80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 
 }
 
-.hero button {
-    padding: 15px 40px;
-    border-radius: 0 15px 0 15px;
-    border: none;
-   background-image:linear-gradient(to right, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
-   color:white;
-   font-weight: bold;
-   font-family: "hero";
-   text-transform: uppercase;
-   cursor: pointer;
-   background-size: 200% auto;
-   transition: 0.5s;
-   box-shadow: 0px 5px 5px rgba(14, 3, 3, 0.343);
+.hello {
+    font-size: 3rem;
 }
-.hero button:hover {
-    background-position: right center;
-    scale:1.2;
+.name {
+    font-size: 2.5rem;
+}
+.heroContainer .left {
+    width: 100%;
+    height:100%;
+    margin-top: 200px;
+    max-width: 800px;
+    font-family:"caviar";
    
+     
+}
+
+.heroContainer .right img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 100px;
+
+
 }
 
 
-footer {
+.btn {
+    margin-top: 120px;
+    margin-left: 350px;
+    margin-bottom: 30px;
+    
+}
+.btn button {
+    font-family: 'hero';
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 40px;
+    background-color: rgb(198, 35, 84);
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 0.25s;
+    
+}
+
+.btn button:hover {
+    background-color: rgb(255, 6, 81);
+    scale:1.2;
+
+} 
+
+.btn2 {
+    display: none;
+}
+
+.footer.footer-toggle{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.863);
     font-family: "caviar";
@@ -223,38 +272,24 @@ footer {
     border-bottom: none;
     border-image: linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%)1;
     opacity: 0 ;
-    transform: translateY(100px);
-    transition: 0.25s ease; 
-    
-
-}
-
-.footer {
-    width: 100%;
-    max-width: 90%;
-     margin: 0 auto; 
-    
-   
-}
-
-.footer-toggle{
-    opacity: 1;
-    transform: translateY(0);
-    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 99;
+    transform: translateY(100px);
+    transition: 0.4s ease; 
     
-    
-  
-    
-
-    
-
-
 }
+
+footer {
+    width: 100%;
+    max-width: 90%;
+     margin: 0 auto; 
+    
+}
+
+
 
 footer .content {
     width: 100%;
@@ -306,65 +341,397 @@ footer .right .location {
     scale: 1.2;
 }
 
+.fa-download{
+    color: rgb(0, 0, 0) ;
+
+}
 
 
 
-/* Responsive PAGE ACCEUIL *-------------------------------------------/
+
+
+
+
+
+
+/* /* RESPONSIVE ACCEUIL *--------------------------------------------------------------*/
+
 
 /* 2xl */
-@media (max-width=1536px){};
+@media (max-width:1629px){
+    .heroContainer .left h1{
+        font-size: 3.5rem;
 
+    }
+    .heroContainer .left{
+        max-width: 300px !important;
+        transition: 0.25s;
+        
+    }
+
+    .btn {
+        margin-left: 160px;
+        
+    }
+}
+@media (max-width:1536px){
+ 
+    header .logo, .fo {
+        font-size: 2.5rem;
+        transition: 0.25s;
+    }
+    header nav ul li{
+        padding: 0 20px;
+        transition: 0.25s;
+       
+    }
+  
+    .heroContainer .right img {
+        height: 400px;
+        margin-top: 180px;
+        transition: 0.25s;
+    }
+    .heroContainer .left{
+        max-width: 350px !important;
+        margin-top: 250px;
+        transition: 0.25s;
+ 
+       
+    }
+    .heroContainer .left h1{
+        font-size: 19px !important;
+        line-height: 2.3rem;
+    }
+    .heroContainer .hello, .name {
+        font-size: 2rem;
+    }
+
+    footer h2, p {
+        font-size: 20px ;
+    }
+
+}
 /* xl */
-@media (max-width=1280px){
-    body {
-        font-weight: 20px;
+@media (max-width:1280px){
+    header nav ul li{
+        padding: 0 2px;
+        transition: 0.25s;
+       
     }
-};
 
+    .btn {
+        margin-left: 200px;
+        
+    }
+}
 /* lg */
-@media (max-width=1024px){
-    body {
-        font-weight: 19px;
+@media (max-width:1171px){
+    .heroContainer .right img {
+        height: 300px;
+        transition: 0.25s;
     }
-};
 
-/* md */
-@media (max-width=768px){
-    body {
-        font-weight: 18px;
+    .heroContainer .left h1{
+        font-size: 2.5rem;
+
     }
-};
+    .heroContainer .left{
+        max-width: 350px !important;
+        transition: 0.25s;
+        margin-top: 220px;
+    
+    }
+    .btn {
+        margin-top: 80px;
+        
+    }
+}
+@media (max-width:1024px){
+    header nav ul li{
+        padding: 0;
+        transition: 0.25s;
+       
+    }
+    .heroContainer .left{
+         max-width:100% !important;
+         text-align: center;
+        transition: 0.25s;
+        margin-top:70px;
+
+    
+    }
+    .heroContainer .right{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .heroContainer .hello, .name {
+        line-height: 3rem;
+    }
+    .heroContainer .left h1{
+       font-size: 19px !important;
+        line-height: 1.8rem;
+        text-align: center;
+        
+    }
+
+    .heroContainer .right img {
+        height: 100%;
+        width: 100% !important;
+        object-fit: cover;
+        transition: 0.25s;
+        position: relative;
+        bottom: 200px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+     
+
+    
+.btn2 {
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-right:43px ; */
+
+    
+}
+
+.btn2 button {
+    font-family: 'hero';
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color:  rgb(198, 35, 84);
+    border: none;
+    color: white;
+    transition: 0.25s;
+    
+}
+
+.btn2 button:hover {
+    background-color: rgb(255, 6, 81);
+    /* scale:1.2; */
+
+} 
+
+
+
+
+   .heroContainer {
+    display: flex;
+    flex-direction: column;
+   }
+
+ 
+   
+
+    header {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        transition: 0.25s;
+    }
+
+    footer h2, p {
+        font-size: 18px ;
+    }
+
+}
+/* md */
+@media (max-width:840px){
+  
+}
+
+
+@media (max-width:768px){
+   
+    
+    header nav {
+        scale:0.8;
+    }
+  
+}
+
 
 /* sm */
-@media (max-width=640px){
-    body {
-        font-weight: 16px;
+@media (max-width:640px){
+  
+
+    header .logo, .fo {
+        font-size: 2rem;
+        transition: 0.25s;
     }
-};
+    
+    .heroContainer .left h1 {
+        font-size: 16px !important;
+    }
+
+    footer h2, p {
+        font-size: 16px ;
+    }
+
+   
+}
+
 
 /* xs */
-@media (max-width=475px){
-    body {
-        font-weight: 15px;
+@media (max-width:586px){
+
+    .heroContainer .left .hello, .name {
+        font-size: 1.5rem;
     }
-};
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+        header nav{
+            display: none;
+        }
+        .barmenu{
+        display: inline-block;
+        cursor: pointer;
+        z-index: 99;
+        
+    }
+  
+    header.active {
+        background-color: transparent !important;
+    }
+  
+
+    .nav2.active {
+        opacity: 1;
+        left: 0;
+    
+    }
+   
+
+    .nav2 {
+        font-family: "cabinet";
+        font-size: 19px;
+        display: block;
+        background-color: rgba(25, 55, 89, 0.871);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 100%;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-top:170px;
+        transition: 0.4s;
+        z-index: 98;
+        opacity: 0;
+        display: initial;
+         
+    }
+    
+    .nav2 a {
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: rgba(25, 55, 89, 0.871);
+        border-radius: 0 30px 30px 30px;
+        padding: 15px;
+        width:100%;
+        max-width:250px;
+        margin-bottom: 50px !important;
+        margin: 0 auto;
+        font-family: "caviar";
+    }
+    
+    .nav2 a:hover {
+        background-color:rgb(255, 6, 81);
+    }
+}
+@media (max-width:475px){
+
+    .heroContainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .heroContainer .left h1{
+        font-size: 19px;
+        text-align: center;  
+
+    }
+
+    .barmenu {
+        scale: 0.6;
+    }
+
+  
+  
+    .btn  {
+        display: none;
+          
+    }
+
+    footer h2, p {
+        font-size: 12px ;
+    }
+}    
+@media (max-width:400px){
 
 
-/* PAGE MY WORK */ /*-----------------------------------------------------*/
+    header .logo, .fo {
+        font-size: 1.8rem;
+        transition: 0.25s;
+    }
 
+    footer h2, p {
+        font-size: 10px ;
+    }
+     
+
+
+}
+
+@media (max-width:300px){
+  
+
+    header .logo, .fo {
+        font-size: 1.5rem;
+        transition: 0.25s;
+    }
+
+    footer h2, p {
+        font-size: 5px ;
+    }
+       
+    
+        
+    }
+
+
+
+
+
+
+
+/* PAGE MY WORK---------------------------------------------------------- */
 
 
 
 .header {
     background-color: rgb(0, 0, 0);
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
+    margin-top: 80px !important;
     margin: 0 auto;
-    padding: 20px 0;
-    border-radius: 0 0 30px 30px;
+    padding: 12px 0;
+    border-radius: 0 40px 40px;
     border: none;
     
-
 }
 .header h1 {
     text-align: center;
@@ -380,18 +747,13 @@ footer .right .location {
 .hero-Page{
     width: 100%;
     height: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-   
+    max-width: 90%;
+    margin: 0 auto;  
 }
 .hero-Page .content {
-    background-size: 200% auto;
-    background-image:linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(249, 135, 29, 0.855) 51%, rgb(246, 148, 246)100%);
     display: flex;
+    border: 4px solid black;
+    border-style:dashed;
     flex-direction: raw;
     gap: 30px;
     width: 100%;
@@ -399,9 +761,11 @@ footer .right .location {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    margin-top:40px;
-    padding: 0 40px;
+    margin-top:100px;
+    padding:40px;
+    margin-bottom: 50px;
     transition: 0.5s;
+    border-radius:  0 70px 70px; 
 }
 
 .hero-Page .content:hover{
@@ -412,7 +776,8 @@ footer .right .location {
 
 .hero-Page .content img {
     width: 100%;
-    max-width: 350px;
+    max-width: 500px;
+    border: 1px solid black;
     height: 300px;
     object-fit: cover;
     display: flex;
@@ -462,7 +827,7 @@ footer .right .location {
     
 }
 .hero-Page .content .right .txt::before {
-    content: "Web Design (Landing Page)";
+    content: "Web Design (Home Page)";
     font-family: "caviar";
     font-size: 25px;
     font-weight:bold ;
@@ -473,7 +838,8 @@ footer .right .location {
     background-color: black;
     color: white;
     font-family: "hero";
-    padding:10px 40px;
+    padding:15px;
+    border-radius: 40px;
     font-size: 20px;
     font-weight: 500;
     border: none;
@@ -482,12 +848,49 @@ footer .right .location {
     
 }
 .hero-Page .content button:hover{
-    background-color:rgba(3, 255, 255, 0.545);
+    background-color:rgba(0, 57, 181, 0.545);
     transform: translateY(-5px);
-    color: black;
+    color: rgb(255, 255, 255);
     
     
 }
+
+
+.down {
+    width: 100%;
+    max-width: 1000px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.863);
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+   
+}
+.down p {
+    color: white;
+    font-family: "cake";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 3rem;
+
+}
+
+.down font {
+    color: rgb(255, 0, 68);
+}
+
+.img {
+    display: none;
+}
+
+
+
+
 
 /* PAGE DG ------------------------------------------------------------- */
 
@@ -499,11 +902,11 @@ footer .right .location {
 .header {
     background-color: rgb(0, 0, 0);
     width: 100%;
-    max-width: 500px;
+    max-width: 420px;
     margin-top: 80px !important;
     margin: 0 auto;
-    padding: 20px 0;
-    border-radius: 0 0 30px 30px;
+    padding: 12px 0;
+    border-radius: 0 40px 40px;
     border: none;
     
 
@@ -517,14 +920,14 @@ footer .right .location {
     align-items: center;
     gap: 30px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 90%;
     padding:30px;
     margin: 0 auto;
     margin-top: 30px;
-    background-size: 200% auto;
-    background-image:linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(249, 135, 29, 0.855) 51%, rgb(246, 148, 246)100%);
-    border-radius: 30px 0 30px 30px;;   
-    transition: 0.5s;
+   border: 4px solid black;
+   border-style: dashed;
+    border-radius: 0  70px 70px;   
+    transition: 0.4s;
 
     
 }
@@ -536,8 +939,9 @@ footer .right .location {
 
 .gallery-1 img {
    width: 100%;
-   max-width: 350px;
+   max-width: 500px;
    height: 300px;
+   border: 1px solid black;
    object-fit: cover;
    border-radius: 8px;
    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.494);
@@ -550,7 +954,7 @@ footer .right .location {
 
 .gallery-1 .img-btn {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -558,7 +962,7 @@ footer .right .location {
    
 }
 .gallery-1 .img-btn button:hover{
-    background-color:rgba(31, 137, 137, 0.856)
+    background-color:rgba(0, 57, 181, 0.545);
 }
 
 
@@ -568,8 +972,8 @@ footer .right .location {
 }
 
 .gallery-1::after {
-    content:"";
-    width: 400px;
+    content: "";
+    width: 1030px;
 
 }
 
@@ -577,15 +981,15 @@ footer .right .location {
 
 .img-btn button{
     font-family: "hero";
-    padding: 10px 40px;
+    padding:15px;
+    border-radius: 40px;
     border: none;
     background-color: rgb(0, 0, 0);
     color: white;
     font-weight: 560;
     font-size: 20px;
-    border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 20px 0;
 
 }
 
