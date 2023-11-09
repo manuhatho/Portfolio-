@@ -513,6 +513,7 @@ footer .right .location {
     border: none;
     color: white;
     transition: 0.25s;
+    z-index: 9;
     
 }
 
