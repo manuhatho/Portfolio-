@@ -1,4 +1,4 @@
 function dezoomerPage() {
-    document.body.style.zoom = "100%";
+    document.body.style.zoom = "80%";
  }
  window.onload = dezoomerPage;
