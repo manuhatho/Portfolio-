@@ -187,6 +187,8 @@ header nav ul li a:hover{
 .heroContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -942,8 +944,7 @@ footer .right .location {
 }
 .gallery-1 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -955,8 +956,9 @@ footer .right .location {
     margin: 0 auto;
     margin-top: 30px;
     background-size: 200% auto;
-    border-radius:  0 70px 70px;;   
+    border-radius:  0 70px 70px;
     transition: 0.5s;
+   
 
     
 }
@@ -964,7 +966,14 @@ footer .right .location {
     background-position: right center;
 
 }
-
+.gallery-1Content {
+    width: 100%;
+    max-width: 90%;
+   display: flex;
+   gap: 60px;
+   align-items: center;
+   justify-content: center;
+}
 
 .gallery-1 img {
    width: 100%;
