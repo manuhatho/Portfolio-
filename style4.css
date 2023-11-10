@@ -970,6 +970,7 @@ footer .right .location {
     width: 100%;
     max-width: 90%;
    display: flex;
+   flex-wrap: wrap;
    gap: 60px;
    align-items: center;
    justify-content: center;
@@ -1245,6 +1246,9 @@ footer .right .location {
     .footer .content {
         font-size: 10px;
     }
+    .gallery-1 .img-btn button{
+        scale: 0.6;
+    }
 }
 @media (max-width:280px){
     .footer .content {
@@ -1254,6 +1258,7 @@ footer .right .location {
         height: 100px;
        
     }
+   
     
 }
 
