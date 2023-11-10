@@ -890,6 +890,9 @@ footer .right .location {
 
 /* PAGE DG ------------------------------------------------------------- */
 
+.header h1 a {
+    color: rgb(255, 255, 255);
+}
 .header font{
     color: rgb(255, 0, 55);
     text-transform: none;

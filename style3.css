@@ -532,7 +532,7 @@ footer .right .location {
 
  
    
-
+   
     header {
         display: flex;
         gap: 5px;
@@ -894,6 +894,9 @@ footer .right .location {
 
 /* PAGE DG ------------------------------------------------------------- */
 
+.header h1 a {
+    color: white !important;
+   }
 .header font{
     color: rgb(255, 0, 55);
     text-transform: none;

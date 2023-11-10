@@ -41,7 +41,7 @@ buttonV2.forEach((button, index) => {
         console.log('over');
         const imageContainer = document.querySelectorAll(".img-btn");
         const image = imageContainer[index].querySelector('img');
-        image.style.boxShadow ="1px 1px 10px 5px rgb(255, 255, 255)";
+        image.style.boxShadow ="1px 1px 10px 5px rgb(237, 60, 99)";
     })
     button.addEventListener("mouseout", ()=> {
         console.log('out');
@@ -86,7 +86,6 @@ window.addEventListener("scroll", function() {
 })
 
 
- console.log(homeImg);
  document.oncontextmenu = function(){
      return false;
  }

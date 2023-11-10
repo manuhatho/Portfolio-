@@ -1,0 +1,350 @@
+@font-face {
+    font-family: "hero";
+    src: url(/fonts/Hero-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "hero";
+    font-size: large;
+}
+
+body {
+   height: 100%;
+   width: 100%;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(255, 246, 246);
+    min-width: 100vh;
+    position: sticky;
+    top: 0;
+    
+     
+    
+}
+
+nav {
+    position: relative;
+    display: flex;
+    gap: 100px;
+    padding-top: 40px;
+    z-index: 1;
+    
+
+}
+.label1{
+    /* position: relative; */
+}
+.fa-bars-staggered {
+    scale: 1.5;
+    transition: all 0.3s ease;
+    position: absolute;
+    
+
+}
+
+.fa-bars-staggered:active {
+    color: rgb(245, 89, 214);
+    transform: rotate(45deg);
+}
+
+.dropMenu ul {
+    position: absolute;
+    left: 0;
+    display: block;
+    list-style: none;
+    top: 95%;
+    background-color: rgba(255, 246, 246, 0.696);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    display: none;
+   
+}
+.dropMenu ul li{
+     transition: all 0.3s ease-in-out;
+     padding: 6px 30px;
+
+     
+
+}
+.dropMenu ul li:hover {
+    background-color: rgba(153, 14, 168, 0.448);
+    
+}
+
+.dropMenu ul a {
+    color: black;
+    text-decoration: none;
+    padding: 0 40px;
+
+}
+.dropMenu ul a:hover{
+    color: white;
+}
+
+.btnDrop{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 9px 40px;
+}
+.btnDrop:hover{
+    background-color:rgba(153, 14, 168, 0.448); 
+    
+}
+.btnDrop:hover .dropContent{
+    display: initial;
+    
+}
+.dropContent{
+    position: absolute;
+    right:212%;
+    bottom: 95%;
+    display: none;
+}
+
+
+.label1 {
+    /* position: relative; */
+}
+
+input#click {
+    display: none;
+}
+
+#click:checked~.dropMenu ul {
+    display: initial;
+    
+
+}
+
+
+
+
+
+.mainMenu ul {
+    display: flex;
+    list-style: none;
+    z-index: -1;
+}
+.mainMenu ul li{
+    transition: all 0.3s ease-in-out;
+    
+    
+    
+}
+.mainMenu ul li:hover{
+    background-color: rgba(153, 14, 168, 0.448);
+}
+
+.mainMenu ul a {
+    color: black;
+    text-decoration: none;
+    padding:0 30px;
+
+}
+.mainMenu ul a:hover{
+    color: rgb(255, 255, 255);
+   
+}
+
+input#click2 {
+    display: none;
+}
+
+.fa-bars {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    scale: 1.5;
+
+}
+
+.bar {
+    border: 1px solid rgba(153, 14, 168, 0.448);
+    height: auto;
+    width: auto;
+}
+
+/* mode responsive Nav */
+@media (max-width:1188px) {
+    .fa-bars-staggered{
+        right: 80%;
+    }
+    .dropMenu ul{
+        left:20% ;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:950px) {
+    #click2:checked ~ .mainMenu ul{
+        display: initial;
+    }
+    .fa-bars-staggered{
+        color: rgb(186, 64, 238);
+    }
+    .fa-bars{
+        visibility: visible;
+        color: rgb(186, 64, 238);
+
+    }
+    .mainMenu ul{
+        position: fixed;
+        display: block;
+        background-color:  rgba(0, 0, 0, 0.62);
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top:0;
+        text-align: center;
+        object-fit: cover;
+        padding-top:160px;
+        display: none;
+        
+    
+    }
+    .mainMenu ul li {
+        padding: 30px;
+        z-index: 1;
+    }
+    .mainMenu ul li a {
+        color: white;
+    }
+    .mainMenu ul li a:hover {
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+@media (max-width:204px) {
+    nav{
+        right: 200px;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    min-height: 100vh;
+    min-width: 100vh;
+    background: url(./wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: larger;
+    padding-bottom: 200px;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 95px 60px 0 60px;
+    gap: 90px;
+  }
+  .heroContent h1 {
+    text-shadow: 0 5px 15px rgb(0, 0, 0);
+    font-size: 4rem;
+  }
+  
+  .heroContent p {
+    text-shadow: 0 5px 15px rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  
+  .heroContent .btn button {
+    margin-top: 100px;
+    font-size: 1.6rem;
+    height: 60px;
+    width: 240px;
+    border-radius: 30px 0;
+    background: none;
+    color: white;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .heroContent .btn button:hover {
+    transform: scale(1.3);
+    color: rgb(239, 199, 53);
+  }
+  
+  .contenairFst {
+    padding: 50px;
+    text-align: center;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-direction: row;
+    width: 100%;
+   
+  }
+  .left{
+   width: 100%;
+   
+  }
+  .left .img {
+    background-image: url(./wallpaperflare.com_wallpaper\ \(1\).jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    height: 600px;
+  }
+  
+  .right p {
+    margin-top: 5%;
+    text-align: end;
+  }
+  .right .btn2 {
+    margin-top: 10%;
+    text-align: end;
+    margin-right: 40px;
+  }
+  
+  .btn2 button {
+    scale: 1.5;
+    height: 30px;
+    width: 100px;
+    border-radius: 0 15px;
+    background: none;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .btn2 button:hover {
+    scale: 2;
+    color: white;
+    border: none;
+    background-color: rgba(236, 198, 28, 0.882);
+  }
+
+  /* responsive */
+  
+  
