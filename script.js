@@ -86,9 +86,9 @@ window.addEventListener("scroll", function() {
 })
 
 
-//  document.oncontextmenu = function(){
-//      return false;
-//  }
+ document.oncontextmenu = function(){
+     return false;
+ }
 
  const arrow = document.querySelector(".arrow");
  
