@@ -1149,7 +1149,7 @@ footer .right .location {
     .header{
         margin-left: 5px;
     }
-   .hero-Page .content img{
+   .gallery-1 img{
         height: 200px;
        
     }
@@ -1177,15 +1177,11 @@ footer .right .location {
   
    overflow-X: hidden;
 }
-.hero-Page .content img{
+.gallery-1 img{
     height: 100px;
    
-}
+ }
 
-.hero-Page .content img{
-    height: 100px;
-   
-}
 }
 /* PAGE Wd------------------------------------------------------------ */
 

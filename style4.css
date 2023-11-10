@@ -1128,15 +1128,11 @@ footer .right .location {
         padding-top: 160px;
     
     }
-    body{
-        background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
-        }   
+      
 }
 
 @media (max-height:560px){
-    body {
-         background-image: url(./assets/images/Landing-\ TRAVAUX.jpg);
-    }
+    
     .hero-btn{
        bottom: 20px;
     }
