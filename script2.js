@@ -3,4 +3,4 @@ function dezoomerPage() {
  }
  window.onload = dezoomerPage;
 
- alert()
+ 
