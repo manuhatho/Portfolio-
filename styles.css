@@ -161,6 +161,7 @@ header nav ul li a:hover{
     border-radius: 2px;
     margin-bottom: 6px;
     transition: 0.4s;
+    margin-left: 6px;
     z-index:99;
 }
 
