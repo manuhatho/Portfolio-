@@ -89,3 +89,21 @@ window.addEventListener("scroll", function() {
  document.oncontextmenu = function(){
      return false;
  }
+
+ const arrow = document.querySelector(".arrow");
+ 
+ arrow.addEventListener("click", function() {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+ });
+
+ window.addEventListener("scroll", function(){
+    if (window.scrollY>200){
+        arrow.style.display = "block"
+
+    } else {
+        arrow.style.display = "none"
+    }
+ })
