@@ -911,8 +911,6 @@ footer .right .location {
     right: 30px;
     bottom: 30px;
     scale: 0.8;
-    background-color: rgb(146, 145, 145);
-    border-radius: 50px;
     cursor: pointer;
     margin-bottom: 100px;
     display: none;
