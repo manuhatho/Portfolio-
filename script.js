@@ -79,11 +79,14 @@ var scroolTopValue = 400;
 
 nav.scrollTop = scroolTopValue;
 
+const= document.getElementById("white");
+
 bar.addEventListener("click", function() {
     // console.log('click');
     bar.classList.toggle("active");
     nav.classList.toggle("active");
     header.classList.toggle("active");
+    white.classList.toggle("active");
 
 });
 
