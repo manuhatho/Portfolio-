@@ -1,16 +1,16 @@
 
-const preloader = document.getElementById("preloader");
-// console.log(preloader);
+// const preloader = document.getElementById("preloader");
+// // console.log(preloader);
 
-<<<<<<< HEAD
-// window.addEventListener("load",function(){
+
+// // window.addEventListener("load",function(){
+// //     preloader.style.display = "none"
+// // } )
+
+// //window.addEventListener("load",function(){
 //     preloader.style.display = "none"
-// } )
-=======
-//window.addEventListener("load",function(){
-    preloader.style.display = "none"
-//} )
->>>>>>> 07449923a55f02adcab191359ff5303d9ba70735
+// //} )
+
 
 
 
@@ -85,12 +85,10 @@ var scroolTopValue = 400;
 
 nav.scrollTop = scroolTopValue;
 
-<<<<<<< HEAD
+
 const white = document.getElementById("white")
 console.log(white);
-=======
-const= document.getElementById("white");
->>>>>>> 07449923a55f02adcab191359ff5303d9ba70735
+
 
 bar.addEventListener("click", function() {
     // console.log('click');
