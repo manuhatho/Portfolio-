@@ -40,8 +40,8 @@ body::-webkit-scrollbar{
 
 
 #preloader {
-    background: black url(./giphy.gif) no-repeat center center;
-    background-size: 50%;
+    background: black url(./1.mp4) no-repeat center center;
+    background-size: 40%;
     height: 100%;
     width: 100%;
     position: fixed;
