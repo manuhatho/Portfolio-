@@ -74,6 +74,9 @@ header .logo{
     z-index: 99;
     
 }
+header .logo #white.active {
+    color: white;
+}
 
 .no-select {
     user-select: none;

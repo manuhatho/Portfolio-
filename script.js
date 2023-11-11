@@ -2,9 +2,9 @@
 const preloader = document.getElementById("preloader");
 // console.log(preloader);
 
-window.addEventListener("load",function(){
-    preloader.style.display = "none"
-} )
+// window.addEventListener("load",function(){
+//     preloader.style.display = "none"
+// } )
 
 
 
@@ -79,11 +79,15 @@ var scroolTopValue = 400;
 
 nav.scrollTop = scroolTopValue;
 
+const white = document.getElementById("white")
+console.log(white);
+
 bar.addEventListener("click", function() {
     // console.log('click');
     bar.classList.toggle("active");
     nav.classList.toggle("active");
     header.classList.toggle("active");
+    white.classList.toggle("active");
 
 });
 
