@@ -41,7 +41,7 @@ body::-webkit-scrollbar{
 
 #preloader {
     background: black url(./giphy.gif) no-repeat center center;
-    background-size: 30%;
+    background-size: 50%;
     height: 100%;
     width: 100%;
     position: fixed;
