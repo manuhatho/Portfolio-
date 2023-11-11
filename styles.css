@@ -86,7 +86,7 @@ header .logo{
     
 }
 
-header .logo #white.active {
+header .logo.active #white {
     color:white;
 }
 
