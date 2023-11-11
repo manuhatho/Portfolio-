@@ -86,6 +86,10 @@ header .logo{
     
 }
 
+header .logo #white.active {
+    color:white;
+}
+
 .no-select {
     user-select: none;
 }
