@@ -84,6 +84,9 @@ header .logo, .fo{
 header .logo .red{
     color: rgb(245, 35, 98);
 }
+header .logo #white.active {
+    color: white;
+}
 
 
 header nav {

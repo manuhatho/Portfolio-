@@ -1,10 +1,13 @@
 
-const preloader = document.getElementById("preloader");
-// console.log(preloader);
+// const preloader = document.getElementById("preloader");
+// // console.log(preloader);
 
-window.addEventListener("load",function(){
-    preloader.style.display = "none"
-} )
+// window.addEventListener("load",function(){
+//     preloader.style.display = "none"
+// } )
+
+
+
 
 
 
@@ -75,6 +78,8 @@ const nav = document.querySelector(".nav2");
 // console.log(nav);
 const header = document.querySelector("header");
 
+const white= document.getElementById("white");
+
 var scroolTopValue = 400;
 
 nav.scrollTop = scroolTopValue;
@@ -84,6 +89,7 @@ bar.addEventListener("click", function() {
     bar.classList.toggle("active");
     nav.classList.toggle("active");
     header.classList.toggle("active");
+    white.classList.toggle("active");
 
 });
 
