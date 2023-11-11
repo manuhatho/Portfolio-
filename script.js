@@ -2,9 +2,9 @@
 const preloader = document.getElementById("preloader");
 // console.log(preloader);
 
-window.addEventListener("load",function(){
+//window.addEventListener("load",function(){
     preloader.style.display = "none"
-} )
+//} )
 
 
 
