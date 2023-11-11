@@ -39,7 +39,14 @@ body::-webkit-scrollbar{
         }
 
 
-
+#preloader {
+    background: black url(./giphy.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 main {
     width: 100%;
@@ -250,8 +257,9 @@ header nav ul li a:hover{
 }
 
 .btn button:hover {
-    background-color: rgb(255, 6, 81);
+    background-color:  rgb(160, 0, 48);
     scale:1.2;
+
 
 } 
 
@@ -555,8 +563,8 @@ footer .right .location {
 }
 
 .btn2 button:hover {
-    background-color: rgb(255, 6, 81);
-    /* scale:1.2; */
+    background-color: rgb(160, 0, 48);
+    scale: 1.2;
 
 } 
 

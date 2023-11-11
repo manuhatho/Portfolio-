@@ -1,5 +1,20 @@
+
+const preloader = document.getElementById("preloader");
+// console.log(preloader);
+
+window.addEventListener("load",function(){
+    preloader.style.display = "none"
+} )
+
+
+
+
+
+
+
+
 const footerVisible = document.querySelectorAll('.nav-link3');
-console.log(footerVisible);
+// console.log(footerVisible);
 const footer = document.querySelector('.footer');
 const Mfooter = document.querySelector('footer');
 // console.log(Mfooter);
@@ -86,18 +101,18 @@ window.addEventListener("scroll", function() {
 })
 
 
- document.oncontextmenu = function(){
-     return false;
- }
+//  document.oncontextmenu = function(){
+//      return false;
+//  }
 
  const arrow = document.querySelector(".arrow");
  
- arrow.addEventListener("click", function() {
+ arrow.addEventListener("click",function(){
     window.scrollTo({
         top:0,
         behavior:"smooth"
-    });
- });
+    })
+ })
 
  window.addEventListener("scroll", function(){
     if (window.scrollY>200){
@@ -107,5 +122,3 @@ window.addEventListener("scroll", function() {
         arrow.style.display = "none"
     }
  })
-
- 
