@@ -86,8 +86,13 @@ header .logo{
     
 }
 
+<<<<<<< HEAD
 header .logo #white.active {
     color: white;
+=======
+header .logo.active #white {
+    color:white;
+>>>>>>> 07449923a55f02adcab191359ff5303d9ba70735
 }
 
 .no-select {
