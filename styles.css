@@ -95,9 +95,7 @@ header .logo, .fo{
 header .logo .red{
     color: rgb(245, 35, 98);
 }
-header .logo #white.active {
-    color: white;
-}
+
 
 
 header nav {
@@ -287,7 +285,7 @@ header nav ul li a:hover{
     margin: 0 auto;
     border: 10px solid;
     border-bottom: none;
-    border-image: linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%)1;
+    /* border-image: linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%)1; */
     opacity: 0 ;
     position: fixed;
     bottom: 0;
@@ -348,27 +346,8 @@ footer .right {
     margin-top: 30px;
 }
 
-footer .right .location {
-   margin-left: 29px;
-}
 
-.fa-brands {
-    color: white;
-    scale: 1.2;
-    margin: 0 5px;
-}
-.fa-location-dot{
-    color: white;
-    position: relative;
-    bottom: 27px;
-    margin-left: 22px;
-    scale: 1.2;
-}
 
-.fa-download{
-    color: rgb(0, 0, 0) ;
-
-}
 
 
 footer .right .location {
@@ -377,15 +356,15 @@ footer .right .location {
  
  .fa-brands {
      color: white;
-     scale: 1.2;
+     scale: 0.9;
      margin: 0 5px;
  }
  .fa-location-dot{
      color: white;
      position: relative;
      bottom: 27px;
-     margin-left: 22px;
-     scale: 1.2;
+     /* margin-left: 22px; */
+     scale: 0.9;
  }
  
  .fa-download{
@@ -673,7 +652,7 @@ footer .right .location {
         font-family: "cabinet";
         font-size: 19px;
         display: block;
-        background-color: rgba(25, 55, 89, 0.871);
+        background-color: rgb(255, 255, 255);
         height: 100%;
         width: 100%;
         position: fixed;
@@ -693,7 +672,7 @@ footer .right .location {
     .nav2 a {
         display: block;
         color: rgb(255, 255, 255);
-        background-color: rgba(25, 55, 89, 0.871);
+        background-color: rgb(198, 35, 84);
         border-radius: 0 30px 30px 30px;
         padding: 15px;
         width:100%;
