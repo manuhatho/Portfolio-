@@ -84,9 +84,7 @@ header .logo, .fo{
 header .logo .red{
     color: rgb(245, 35, 98);
 }
-header .logo #white.active {
-    color: white;
-}
+
 
 
 header nav {
@@ -622,7 +620,7 @@ footer .right .location {
         font-family: "cabinet";
         font-size: 19px;
         display: block;
-        background-color: rgba(25, 55, 89, 0.871);
+        background-color: rgb(255, 255, 255);
         height: 100%;
         width: 100%;
         position: fixed;
@@ -642,7 +640,7 @@ footer .right .location {
     .nav2 a {
         display: block;
         color: rgb(255, 255, 255);
-        background-color: rgba(25, 55, 89, 0.871);
+        background-color:  rgb(198, 35, 84);
         border-radius: 0 30px 30px 30px;
         padding: 15px;
         width:100%;
