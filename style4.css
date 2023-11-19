@@ -1024,7 +1024,7 @@ footer .right .location {
    border-radius: 8px;
    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.494);
    transition: 0.25s ;
-   border: 1px solid black;
+
 }
 .gallery-1 img:hover{
     box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
