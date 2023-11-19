@@ -39,7 +39,14 @@ body::-webkit-scrollbar{
         }
 
 
-
+#preloader {
+    background: black url(./giphy.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 
 main {
     width: 100%;
@@ -47,6 +54,10 @@ main {
     height: 100%;
     margin: 0 auto;
     
+}
+
+.no-select {
+user-select:none;
 }
 
 header {
@@ -247,8 +258,9 @@ header nav ul li a:hover{
 }
 
 .btn button:hover {
-    background-color: rgb(255, 6, 81);
+    background-color:  rgb(160, 0, 48);
     scale:1.2;
+
 
 } 
 
@@ -256,9 +268,10 @@ header nav ul li a:hover{
     display: none;
 }
 
-.footer.footer-toggle{
+ .footer.footer-toggle {
     opacity: 1;
     transform: translateY(0);
+   
 }
 
 
@@ -270,20 +283,20 @@ header nav ul li a:hover{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    border: 10px solid;
-    border-bottom: none;
     /* border-image: linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%)1; */
     opacity: 0 ;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 98;
+    z-index: 99;
     transform: translateY(100px);
     transition: 0.4s ease; 
     
 }
 
+
+  
 
 footer.footer-toggle {
     height: 100%;
@@ -295,7 +308,6 @@ footer {
     height: 0;
   transition: 0.4s;
 }
-
 
 
 
@@ -332,27 +344,31 @@ footer .right {
     margin-top: 30px;
 }
 
+
+
+
+
 footer .right .location {
-   margin-left: 29px;
-}
-
-.fa-brands {
-    color: white;
-    scale: 0.9;
-    margin: 0 5px;
-}
-.fa-location-dot{
-    color: white;
-    position: relative;
-    bottom: 27px;
-    /* margin-left: 20px; */
-    scale: 0.9;
-}
-
-.fa-download{
-    color: rgb(0, 0, 0) ;
-
-}
+    margin-left: 29px;
+ }
+ 
+ .fa-brands {
+     color: white;
+     scale: 0.9;
+     margin: 0 5px;
+ }
+ .fa-location-dot{
+     color: white;
+     position: relative;
+     bottom: 27px;
+     /* margin-left: 22px; */
+     scale: 0.9;
+ }
+ 
+ .fa-download{
+     color: rgb(0, 0, 0) ;
+ 
+ }
 
 
 
@@ -506,8 +522,9 @@ footer .right .location {
     display: flex!important;
     justify-content: center;
     align-items: center;
+  
 
-    /* margin-right:43px ; */
+
 
     
 }
@@ -521,12 +538,13 @@ footer .right .location {
     border: none;
     color: white;
     transition: 0.25s;
+   
     
 }
 
 .btn2 button:hover {
-    background-color: rgb(255, 6, 81);
-    /* scale:1.2; */
+    background-color: rgb(160, 0, 48);
+    scale: 1.2;
 
 } 
 
@@ -551,6 +569,12 @@ footer .right .location {
     footer h2, p {
         font-size: 18px ;
     }
+
+    .heroContainer .right{
+        margin-top: 35px;
+    }
+
+
 
 }
 /* md */
@@ -659,6 +683,9 @@ footer .right .location {
     .nav2 a:hover {
         background-color:rgb(255, 6, 81);
     }
+    .fa-location-dot{
+        bottom: 35px;
+    }
 }
 @media (max-width:475px){
 
@@ -687,6 +714,9 @@ footer .right .location {
     footer h2, p {
         font-size: 12px ;
     }
+    .fa-location-dot{
+        bottom: 28px;
+    }
 }    
 @media (max-width:400px){
 
@@ -713,12 +743,24 @@ footer .right .location {
     }
 
     footer h2, p {
-        font-size: 5px ;
+        font-size: 8px ;
+    }
+    .fa-location-dot, .fa-brands{
+        scale: 0.6;
+        margin: 0;
+    }
+    .fa-location-dot{
+        bottom:25px;
     }
        
     
         
     }
+
+
+
+
+
 
 
 
@@ -844,7 +886,7 @@ footer .right .location {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     width: 100%;
 
     
@@ -892,6 +934,7 @@ footer .right .location {
     cursor: pointer;
     transition: 0.25s ease;
     margin-bottom: 100px;
+    margin-top: 20px;
     
 }
 
