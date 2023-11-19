@@ -1022,7 +1022,7 @@ footer .right .location {
    height: 300px;
    object-fit: cover;
    border-radius: 8px;
-   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.494);
+
    transition: 0.25s ;
 
 }
