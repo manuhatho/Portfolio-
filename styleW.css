@@ -187,6 +187,15 @@ input#click2 {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+       
+    }
+    .content .left {
+        display: flex;
+        justify-content: center;
+    }
+    .content .left img {
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -244,6 +253,8 @@ main {
     min-height: 100vh;
     min-width: 100vh;
     background: url(./wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-color: rgba(0, 0, 0, 0.601);
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     color: white;
@@ -276,7 +287,7 @@ main {
     width: 240px;
     border-radius: 30px 0;
     background: none;
-    color: white;
+    color: rgb(186, 64, 238);
     box-shadow: 0 0 10px rgb(255, 255, 255);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -297,39 +308,51 @@ main {
   }
   .content {
     margin-top: 60px;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  
     flex-direction: row;
     width: 100%;
+    gap: 10px;
+ 
    
   }
   .left{
-   width: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+ 
    
   }
-  .left .img {
-    background-image: url(./wallpaperflare.com_wallpaper\ \(1\).jpg);
+  .left img {
+    display: flex;
+      width: 500px;
+    height: 300px;
+    max-height: 300px;
     object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0;
-    height: 600px;
   }
   
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    
+  }
   .right p {
-    margin-top: 5%;
+  padding-top: 50px;
     text-align: end;
   }
   .right .btn2 {
-    margin-top: 10%;
-    text-align: end;
-    margin-right: 40px;
+   
+    text-align: start;
+   margin-left: 30px;
   }
   
   .btn2 button {
-    scale: 1.5;
+ 
     height: 30px;
     width: 100px;
     border-radius: 0 15px;
@@ -339,7 +362,7 @@ main {
     transition: all 0.3s ease;
   }
   .btn2 button:hover {
-    scale: 2;
+    scale: 1.2;
     color: white;
     border: none;
     background-color: rgba(236, 198, 28, 0.882);
