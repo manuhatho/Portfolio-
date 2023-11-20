@@ -250,7 +250,7 @@ header nav ul li a:hover{
     font-size: 20px;
     padding: 12px 30px;
     border-radius: 40px;
-    background-color: rgb(198, 35, 84);
+    background-color: rgb(176, 7, 58);
     border: none;
     color: rgb(255, 255, 255);
     transition: 0.25s;
@@ -258,7 +258,7 @@ header nav ul li a:hover{
 }
 
 .btn button:hover {
-    background-color:  rgb(160, 0, 48);
+    background-color:  rgb(255, 0, 76);
     scale:1.2;
 
 
@@ -314,10 +314,10 @@ footer {
 footer .content {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    padding: 20px 0;
+    /* gap: 30px; */
+    padding: 0 25px;
    
 
 }
@@ -349,7 +349,7 @@ footer .right {
 
 
 footer .right .location {
-    margin-left: 29px;
+    /* margin-left: 29px; */
  }
  
  .fa-brands {
@@ -361,7 +361,7 @@ footer .right .location {
      color: white;
      position: relative;
      bottom: 27px;
-     /* margin-left: 22px; */
+    right: 25px;
      scale: 0.9;
  }
  
@@ -607,7 +607,10 @@ footer .right .location {
     }
 
     footer h2, p {
-        font-size: 16px ;
+        font-size: 14px ;
+    }
+    footer .content {
+        padding: 0;
     }
 
    
@@ -684,7 +687,7 @@ footer .right .location {
         background-color:rgb(255, 6, 81);
     }
     .fa-location-dot{
-        bottom: 35px;
+        /* bottom: 35px; */
     }
 }
 @media (max-width:475px){
@@ -729,11 +732,22 @@ footer .right .location {
     footer h2, p {
         font-size: 10px ;
     }
-     
+     footer .location {
+        text-align: center;
+     }
+     .fa-location-dot{
+        margin-left: 5px;
+     }
 
 
 }
 
+@media (max-width:328px){
+    .fa-location-dot{
+        margin-left: 28px;
+     }
+
+}
 @media (max-width:300px){
   
 
@@ -751,17 +765,12 @@ footer .right .location {
     }
     .fa-location-dot{
         bottom:25px;
+      
     }
        
     
         
     }
-
-
-
-
-
-
 
 
 /* PAGE MY WORK---------------------------------------------------------- */
