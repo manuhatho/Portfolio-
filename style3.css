@@ -1068,7 +1068,8 @@ footer .right .location {
 
 .gallery-1::after {
     content: "";
-    width: 1030px;
+    width: 500px;
+    
 
 }
 
