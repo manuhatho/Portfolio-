@@ -78,22 +78,14 @@ header {
     align-items: center;
 
 }
-header .logo{
-    font-family: "cake";
-    font-size: 2.5rem;
-    padding: 10px;
-    z-index: 99;
-    
-}
+
 
 .no-select {
     user-select: none;
 }
-header .logo, .fo{
-    color: black;
-}
-header .logo .red{
-    color: rgb(245, 35, 98);
+header img {
+    height: 50px;
+    z-index: 99;
 }
 
 
