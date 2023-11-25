@@ -1036,16 +1036,12 @@ footer .right .location {
    width: 100%;
    max-width: 500px;
    height: 300px;
-   border: 1px solid black;
    object-fit: cover;
    border-radius: 8px;
    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.494);
    transition: 0.25s ;
 }
-.gallery-1 img:hover{
-    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255)!important;
-   
-}
+
 
 .gallery-1 .img-btn {
     width: 100%;
