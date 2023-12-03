@@ -866,7 +866,7 @@ footer .right .location {
 .hero-Page .content img {
     width: 100%;
     max-width: 500px;
-    height: 300px;
+    max-height: 300px;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -956,14 +956,15 @@ footer .right .location {
     margin: 0 5px;
 }
 
-#button-V{
-    
-    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
-    background-size: 200% auto;
+.left #button-v {
+    display: inline-block!important;
 }
-#button-V:hover {
-    background-position: right center;
-}
+
+
+
+
+
+
 
 
 .down {
@@ -1136,12 +1137,23 @@ footer .right .location {
 @media (max-width:451px){
     .hero-Page .content .left .btn-v{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+    }
+    .hero-Page .content .left .btn-v a {
+        height: 80px;
+       
     }
     button {
         scale: 0.7;
+        width: 160px;
     }
+  
+}
+@media (max-width:378px){
+
 }
 @media (max-width:375px){
     .footer .content {
@@ -1155,18 +1167,18 @@ footer .right .location {
 }
 
 
-@media (max-width:280px){
+@media (max-width:356px){
    body {
   
    overflow-X: hidden;
 }
 .hero-Page .content img{
-    height: 100px;
+    height: 120px;
    
 }
 
 .hero-Page .content img{
-    height: 100px;
+    height: 120px;
    
 }
 }
