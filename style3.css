@@ -553,9 +553,10 @@ footer .right .location {
 
     header {
         display: flex;
-        gap: 5px;
+        gap: 20px;
         flex-direction: column;
         transition: 0.25s;
+        padding-bottom: 20px;
     }
 
     footer h2, p {
@@ -1229,6 +1230,9 @@ footer .right .location {
         font-weight: 16px!important;
         
     }
+    button {
+        scale: 0.9;
+    }
    
 }
 
@@ -1236,20 +1240,25 @@ footer .right .location {
 @media (max-width:475px){
     body {
         font-weight: 15px !important;
-     
+        
     }
     .header{
         margin-left: 5px;
     }
-   .gallery-1 img{
+    .gallery-1 img{
         height: 200px;
-       
+        
     }
-
+    
     .hero-content {
         margin-top: 150px;
     }
     
+}
+@media (max-width:451px){
+    button {
+        scale: 0.7;
+    }
 }
 
 @media (max-width:375px){

@@ -550,12 +550,13 @@ footer .right .location {
  
    
 
-    header {
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-        transition: 0.25s;
-    }
+   header {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    transition: 0.25s;
+    padding-bottom: 20px;
+}
 
     footer h2, p {
         font-size: 18px ;
