@@ -557,7 +557,10 @@ footer .right .location {
         gap: 20px;
         flex-direction: column;
         transition: 0.25s;
-        padding-bottom: 20px;
+        
+    }
+    header nav {
+        margin-top: 20px;
     }
     
 
