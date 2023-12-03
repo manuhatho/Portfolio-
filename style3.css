@@ -1053,12 +1053,15 @@ footer .right .location {
    
 }
 .gallery-1 .img-btn button:hover{
-    background-color:rgba(0, 57, 181, 0.545);
+    background-position: right center;
+    transform: translateY(-5px);
+    color: rgb(0, 0, 0);
 }
 
 
 .gallery-1 .img-btn button {
-    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.26);
+    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
+    background-size: 200% auto;
     transition: 0.25s ease;
 }
 

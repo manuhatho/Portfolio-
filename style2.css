@@ -883,10 +883,12 @@ footer .right .location {
     align-items: center;
     width: 100%;
     margin-top: 30px;
-
+   
     
-  
+    
+    
 }
+
 
 .hero-Page .content .left .txt::before {
     content: "Design Graphique & Illustration";
@@ -917,8 +919,10 @@ footer .right .location {
 }
 
 
+
 .hero-Page .content button{
-    background-color: rgb(255, 0, 89);
+    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
+    background-size: 200% auto;
     color: white;
     font-family: "hero";
     padding:15px;
@@ -937,11 +941,20 @@ footer .right .location {
    
 
 .hero-Page .content button:hover{
-    background-color:rgba(0, 57, 181, 0.545);
+    background-position: right center;
     transform: translateY(-5px);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     
     
+}
+
+#button-V{
+    margin:0 10px;
+    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
+    background-size: 200% auto;
+}
+#button-V:hover {
+    background-position: right center;
 }
 
 

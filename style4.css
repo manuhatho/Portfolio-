@@ -1045,7 +1045,9 @@ footer .right .location {
    
 }
 .gallery-1 .img-btn button:hover{
-   background-color: rgba(18, 98, 169, 0.753);
+    background-position: right center;
+    transform: translateY(-5px);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -1055,6 +1057,8 @@ footer .right .location {
     border-radius: 40px;
     transition: 0.25s ease-in-out;
     margin-top: 20px;
+    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
+    background-size: 200% auto;
 }
 
 .gallery-1::after {
