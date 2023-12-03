@@ -915,7 +915,7 @@ footer .right .location {
     
 }
 .hero-Page .content .right .txt::before {
-    content: "Web Design (Home Page)";
+    content: " Responsive Web Design";
     font-family: "caviar";
     font-size: 25px;
     font-weight:bold ;
