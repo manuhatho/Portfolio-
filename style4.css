@@ -1272,10 +1272,14 @@ footer .right .location {
     body {
         font-weight: 16px;
     }
+    button {
+        scale: 0.9;
+    }
    
 }
 
 /* xs */
+
 @media (max-width:475px){
     body {
         font-weight: 15px;
@@ -1290,6 +1294,11 @@ footer .right .location {
     }
     
     
+}
+@media (max-width:451px){
+    button {
+        scale: 0.7;
+    }
 }
 
 @media (max-width:375px){
