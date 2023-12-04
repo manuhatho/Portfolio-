@@ -67,7 +67,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    margin: auto;
+    margin:0 auto;
+    margin-bottom: 30px !important;
     position: sticky ;
     top: 0;
     z-index: 99;
