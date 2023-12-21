@@ -22,14 +22,41 @@ const footer = document.querySelector('.footer');
 const Mfooter = document.querySelector('footer');
 // console.log(Mfooter);
 // console.log(footer);
+const nav = document.querySelector(".nav2");
+// console.log(nav);
 
-footerVisible.forEach((contact, index)=>{
-    contact.addEventListener('click', function(){
-        footer.classList.toggle('footer-toggle')
-        Mfooter.classList.toggle('footer-toggle')
-    })
+
+footerVisible.forEach((contact, index) => {
+    if (index === 2 || index === 0) {
+        contact.addEventListener("click", function () {
+            console.log('je click sur index 2');
+            event.stopPropagation(); 
+            footer.classList.toggle('footer-toggle');
+            Mfooter.classList.toggle('footer-toggle');
+        });
+    }
+
+    if (index === 1) {
+        contact.addEventListener("click", function () {
+            console.log('je click sur index 1');
+            footer.classList.remove('footer-toggle');
+            Mfooter.classList.remove('footer-toggle');
+        });
+    }
+});
+
+document.querySelector("body").addEventListener("click",function(){
+    footer.classList.remove('footer-toggle');
+    Mfooter.classList.remove('footer-toggle');
 })
-    
+
+
+
+
+
+
+
+
 
 
 const buttonV = document.querySelectorAll('#button-v');
@@ -74,8 +101,7 @@ buttonV2.forEach((button, index) => {
 
 const bar = document.querySelector(".barmenu");
 // console.log(bar);
-const nav = document.querySelector(".nav2");
-// console.log(nav);
+
 const header = document.querySelector("header");
 
 const white= document.getElementById("white");
@@ -92,6 +118,8 @@ bar.addEventListener("click", function() {
     white.classList.toggle("active");
 
 });
+
+
 
 
 
