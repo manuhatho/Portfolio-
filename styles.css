@@ -276,6 +276,7 @@ header nav ul li a:hover{
     font-family: "caviar";
     font-weight: 800;
     width: 100%;
+    height: auto;
     max-width: 1000px;
     margin: 0 auto;
     /* border-image: linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%)1; */
@@ -287,6 +288,7 @@ header nav ul li a:hover{
     z-index: 99;
     transform: translateY(100px);
     transition: 0.4s ease; 
+    padding: 10px 0;
     
 }
 
@@ -311,15 +313,52 @@ footer .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 30px; */
-    padding: 0 25px;
+    padding: 25px;
+
    
 
+}
+footer .contact::after{
+    content: "";
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left:0;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+footer .contact:hover::after{
+    transition: 0.25s ease;
+    background-color: rgb(225, 5, 93);
+    width: 85px;
+}
+footer .social::after{
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left:0;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+footer .social:hover::after{
+    transition: 0.25s ease;
+    background-color: rgb(225, 5, 93);
+    width: 145px;
 }
 footer h2 {
     background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: relative;
+   
+    
 }
 footer  p {
     background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
@@ -329,41 +368,47 @@ footer  p {
 footer .left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     
 }
 footer .right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 30px;
+    
+
+}
+fieldset{
+    border: none;
+    border-left: 1px solid #ffffffa9;
+   
+}
+footer p, .icon{
+    margin-top: 10px;
+   
 }
 
 
 
 
 
-footer .right .location {
-    /* margin-left: 29px; */
- }
  
  .fa-brands {
+    
      color: white;
-     scale: 0.9;
-     margin: 0 5px;
+    margin-right: 5px;
+    
  }
  .fa-location-dot{
      color: white;
-     position: relative;
-     bottom: 27px;
-    right: 25px;
-     scale: 0.9;
+     display: inline-block;
+     vertical-align: center;   
+     
  }
  
  .fa-download{
      color: rgb(0, 0, 0) ;
  
  }
+
 
 
 
@@ -566,7 +611,7 @@ header nav {
     margin-top: 20px;
 }
 
-    footer h2, p {
+    footer{
         font-size: 18px ;
     }
 
@@ -606,11 +651,8 @@ header nav {
         font-size: 16px !important;
     }
 
-    footer h2, p {
-        font-size: 14px ;
-    }
     footer .content {
-        padding: 0;
+        padding: 5px;
     }
 
    
@@ -686,9 +728,7 @@ header nav {
     .nav2 a:hover {
         background-color:rgb(255, 6, 81);
     }
-    .fa-location-dot{
-        /* bottom: 35px; */
-    }
+   
 }
 @media (max-width:475px){
 
@@ -714,12 +754,35 @@ header nav {
           
     }
 
-    footer h2, p {
-        font-size: 12px ;
+  
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .fa-location-dot{
-        bottom: 28px;
+    footer h2, footer p, footer .icon{
+        margin-top: 15px;
     }
+    footer h2{
+        width: 100%;
+        max-width: fit-content;
+      margin: 0 auto;
+    }
+    .footer{
+        padding: 0 5px;
+    }
+    fieldset{
+        border-left: none;
+        border-top: 1px solid #ffffffa9; 
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .left{
+        text-align: center;
+    }
+   
 }    
 @media (max-width:400px){
 
@@ -729,25 +792,14 @@ header nav {
         transition: 0.25s;
     }
 
-    footer h2, p {
-        font-size: 10px ;
-    }
-     footer .location {
-        text-align: center;
-     }
-     .fa-location-dot{
-        margin-left: 5px;
-     }
+ 
+    
+     
 
 
 }
 
-@media (max-width:328px){
-    .fa-location-dot{
-        margin-left: 28px;
-     }
 
-}
 @media (max-width:300px){
   
 
@@ -756,19 +808,9 @@ header nav {
         transition: 0.25s;
     }
 
-    footer h2, p {
-        font-size: 8px ;
-    }
-    .fa-location-dot, .fa-brands{
-        scale: 0.6;
-        margin: 0;
-    }
-    .fa-location-dot{
-        bottom: 18px;
+  
+   
        
-     }
-       
-    
         
     }
 
