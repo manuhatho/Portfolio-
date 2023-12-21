@@ -268,11 +268,7 @@ header nav ul li a:hover{
     transform: translateY(0) !important;
    
 }
- .footer.active {
-    opacity: 0 !important;
-    transform: translateY(100px) !important;
-   
-}
+
 
 
 .footer {
@@ -308,10 +304,7 @@ footer.footer-toggle {
     
 }
 
-footer.active {
-    height:0 !important;
-     
-}
+
 
 footer {
     height: 0;
