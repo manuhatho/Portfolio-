@@ -50,7 +50,7 @@
 
         <div class="hero-Page">
             <div class="content">
-                <div class="left img" id="imageContainer">
+                <div id="left" class="left img" id="imageContainer">
                     <div class="txt">
                     </div>
                     <img src="./mok.png" alt="">
@@ -62,7 +62,7 @@
                     </div>
                   
                 </div>
-                <div class="right img" id="imageContainer">
+                <div id="right" class="right img" id="imageContainer">
                     <div class="txt">
                     </div>
 
@@ -127,8 +127,8 @@
       });
 
       ScrollReveal().reveal('.header', { delay: 50, origin: 'top' });
-      ScrollReveal().reveal('.left', { delay: 50, origin: 'left' });
-      ScrollReveal().reveal('.right', { delay: 50, origin: 'right' });
+      ScrollReveal().reveal('#left', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('#right ', { delay: 50, origin: 'right' });
       ScrollReveal().reveal('.down', { delay: 50, origin: 'bottom' });
   </script>
 
