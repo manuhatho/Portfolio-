@@ -16,6 +16,10 @@
 
 
 
+
+
+
+
 const footerVisible = document.querySelectorAll('.nav-link3');
 // console.log(footerVisible);
 const footer = document.querySelector('.footer');
@@ -25,6 +29,22 @@ const Mfooter = document.querySelector('footer');
 const nav = document.querySelector(".nav2");
 // console.log(nav);
 
+
+ 
+function exitContact(){
+    const out = document.querySelectorAll("#out");
+    const formulaire = document.querySelector("form")
+    out.forEach(function(index){
+        const form = document.querySelector(".form");
+        index.addEventListener("click",function(){
+            console.log('click');
+            form.classList.toggle("active");
+            formulaire.classList.toggle("active");
+        })
+    })
+
+ }
+ exitContact();
 
 footerVisible.forEach((contact, index) => {
     if (index === 2 || index === 0) {
@@ -156,3 +176,5 @@ window.addEventListener("scroll", function() {
         arrow.style.display = "none"
     }
  })
+
+

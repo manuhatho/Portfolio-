@@ -27,8 +27,8 @@
       <ul>
         <li><a class="nav-link first" href="./index.html">Home</a></li>
         <li><a class="nav-link" href="./My Work.html">My Work</a></li>
-        <li><a class="nav-link nav-link2" href="#">Contact me</a></li>
-                  <li><a class="nav-link nav-link3" href="#">Infos</a></li>
+        <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
+        <li><a class="nav-link nav-link3" href="#">Infos</a></li>
       </ul>
     </nav>
     <div class="barmenu">
@@ -39,7 +39,7 @@
   <div id="nav" class="nav2 nav-link3" >
     <a class="nav-link" href="./index.html">Home</a>
     <a class="nav-link" href="./My Work.html">My Work</a>
-    <a class="nav-link2" href="#">Contact me</a>
+    <a id="out" class="nav-link2" href="#">Contact me</a>
     <a class="nav-link nav-link3" href="#">Infos</a>
   </div>
 
@@ -100,6 +100,25 @@
     </div>
 
   </main>
+
+ 
+  <div class="form">
+  <form action="" method="post">
+    <div  id="out" class="barmenu2">
+      <div class="bar"></div>
+    </div>
+    <h2>Contact me</h2>
+    <fieldset class="contact-me">
+      <input type="text" id="name" name="Name" placeholder="Name" required>
+      <input type="email" id="email" name="Email" placeholder="Email" required>
+      <input type="tel" id="phone" name="Phone" placeholder="Phone" required>
+    </fieldset>
+    <fieldset class="contact-me">
+      <textarea name="" id="" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message" required></textarea>
+      <input type="submit" value="Send">
+    </fieldset >
+  </form>
+</div>
 
 
   <script>
