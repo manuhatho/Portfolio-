@@ -17,6 +17,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: "caviar";
 }
 
 body {
@@ -1219,6 +1220,7 @@ header nav {
 
 .down font {
     color: rgb(255, 0, 68);
+    font-family: "cake";
 }
 
 .img {

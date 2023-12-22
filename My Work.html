@@ -120,7 +120,7 @@
 
     
   <div class="form">
-    <form action="" method="post">
+    <form action="#">
       <div  id="out" class="barmenu2">
         <div class="bar"></div>
       </div>
@@ -131,7 +131,7 @@
         <input type="tel" id="phone" name="Phone" placeholder="Phone" required>
       </fieldset>
       <fieldset class="contact-me">
-        <textarea name="" id="" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message" required></textarea>
+        <textarea name="" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message" required></textarea>
         <input type="submit" value="Send">
       </fieldset >
     </form>
@@ -153,6 +153,10 @@
 
 <script src="./scrollReveal.js? "></script>
     <script src="./script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
