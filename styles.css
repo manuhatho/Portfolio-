@@ -542,7 +542,7 @@ form {
     height: auto;
     margin: 0 auto;
     opacity: 0;
-    transition: 0.3s cubic-bezier(.86, 0, .07, 1);
+    transition: 0.1s cubic-bezier(.86, 0, .07, 1);
     transform: scale(0);
     overflow-y: scroll;
    
