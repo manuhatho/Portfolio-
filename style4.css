@@ -130,6 +130,7 @@ header nav ul li a:hover{
     height: 35px;
     width: 35px;
     display: none;
+    pointer-events: none;
 }
 
 .barmenu::before {
@@ -427,6 +428,7 @@ footer p, .icon{
     border-radius: 50%;
     padding:  5px;
     cursor: pointer;
+    pointer-events: none;
  
   
    
@@ -893,6 +895,7 @@ header nav {
         margin: 0 auto;
         font-family: "caviar";
         z-index: 99;
+        pointer-events: none;
     }
     
     .nav2 a:hover {
