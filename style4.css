@@ -131,7 +131,7 @@ header nav ul li a:hover{
     height: 35px;
     width: 35px;
     display: none;
-    pointer-events: none;
+    
 }
 
 .barmenu::before {
