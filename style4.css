@@ -888,7 +888,7 @@ header nav {
         margin: 0 auto;
         font-family: "caviar";
         z-index: 99;
-        pointer-events: none;
+    
     }
     
     .nav2 a:hover {
