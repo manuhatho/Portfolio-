@@ -10,8 +10,8 @@
     font-family: "hero";
     src: url(./assets/Fonts/Hero-Regular.ttf);
 }
-html.active{
-    overflow-y: hidden;
+body.active{
+    overflow-y: hidden !important;
 }
 * {
     margin:0;

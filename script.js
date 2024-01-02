@@ -125,7 +125,7 @@ const bar = document.querySelector(".barmenu");
 const header = document.querySelector("header");
 
 const white= document.getElementById("white");
-const html = document.querySelector("html");
+const body = document.querySelector("body");
 
 var scroolTopValue = 400;
 
@@ -133,7 +133,7 @@ nav.scrollTop = scroolTopValue;
 
 bar.addEventListener("click", function() {
     // console.log('click');
-    html.classList.toggle("active");
+    body.classList.toggle("active");
     bar.classList.toggle("active");
     nav.classList.toggle("active");
     header.classList.toggle("active");

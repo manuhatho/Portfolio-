@@ -20,8 +20,8 @@
     font-family: "caviar";
 }
 
-html.active{
-    overflow-y: hidden;
+body.active{
+    overflow-y: hidden !important;
 }
 body {
     overflow-x: hidden;
