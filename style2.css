@@ -20,6 +20,9 @@
     font-family: "caviar";
 }
 
+html.active{
+    overflow-y: hidden;
+}
 body {
     overflow-x: hidden;
     width: 100%;
@@ -856,7 +859,7 @@ header nav {
         font-family: "cabinet";
         font-size: 19px;
         display: block;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.43);
         height: 100%;
         width: 100%;
         position: fixed;
@@ -871,6 +874,7 @@ header nav {
         opacity: 0;
         display: initial;
         overflow-y: scroll;
+        backdrop-filter: blur(10px);
          
     }
     .nav2::-webkit-scrollbar{
