@@ -84,17 +84,21 @@ const buttonV = document.querySelectorAll('#button-v');
 
 buttonV.forEach((button, index) => {
     button.addEventListener("mouseover", ()=>{
-        // console.log("hover");
-        let imageContenair = document.querySelectorAll("#imageContainer");
-        let image = imageContenair[index].querySelector("img")
+        // console.log(buttonV);
+        let imageContainer = document.querySelectorAll(".img");
+        let image = imageContainer[index].querySelector("img")
         image.style.boxShadow = "5px 5px 10px rgba(0, 0, 1, 0.5)";
+        image.style.transform = "scale(0.9)";
+        
     })
 
     button.addEventListener("mouseout", ()=>{
         // console.log("hover");
-        let imageContainer = document.querySelectorAll("#imageContainer");
+        let imageContainer = document.querySelectorAll(".img");
+        // console.log(imageContainer);
         let image = imageContainer[index].querySelector("img")
         image.style.boxShadow = "none";
+        image.style.transform = "scale(1)";
     })
 })
 
@@ -103,16 +107,18 @@ const buttonV2 = document.querySelectorAll('.d-voir');
 
 buttonV2.forEach((button, index) => {
     button.addEventListener("mouseover", ()=> {
-        console.log('over');
+        // console.log('over');
         const imageContainer = document.querySelectorAll(".img-btn");
         const image = imageContainer[index].querySelector('img');
         image.style.boxShadow ="5px 5px 10px rgba(0, 0, 1, 0.5)";
+        image.style.transform = "scale(0.9)";
     })
     button.addEventListener("mouseout", ()=> {
-        console.log('out');
+        // console.log('out');
         const imageContainer = document.querySelectorAll(".img-btn");
         const image = imageContainer[index].querySelector('img');
         image.style.boxShadow = "none";
+        image.style.transform = "scale(1)";
     })
 
 
