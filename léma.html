@@ -18,9 +18,11 @@
             width: 100%;
             font-family: "font";
             background: linear-gradient(to bottom, white 0%, black 76%);
+            
         }
         .book{
            
+            overflow-x: hidden;
         }
         figcaption{
             text-align: center;
@@ -40,6 +42,13 @@
             width: 900px;
             height: auto;
             object-fit:cover ;
+        }
+
+        @media (max-width: 919px) {
+            
+            .bookContent img{
+               width: 100%;
+            }
         }
     </style>
 </head>
