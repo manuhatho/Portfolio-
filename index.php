@@ -1,3 +1,45 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
+
+$mail = new PHPMailer(true);
+try {
+
+    // Configuration du serveur SMTP
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com"; // Serveur SMTP de Gmail
+    $mail->SMTPAuch = true;
+    $mail->Username = "graphicdesignhome00@gmail.com";// Mon adress gmail
+    $mail->Password = "hctlmotchptndekj";  // Mon mot de passe d'application
+    $mail->SMTPSecure = PHPMailer ::ENCRYPTION_STARTTLS; // Sécurité TLS
+    $mail->Port = 587; // Port SMTP
+
+    // Destinataire et contenu
+    $mail->setFrom('graphicdesignhome00@gmail', 'Manu Hatho'); // Mon adresse mail de app et le nom
+    $mail->isHTML(false);
+    $mail->Subject = "Nouveau contact via le formulaire de ton Portfolio";
+    $mail->Body = "Full Name:" .
+     htmlspecialchars($_POST["Name"]) . "\n" .
+                    "Email:" .
+    htmlspecialchars($_POST["Email"]) . "\n" .
+                    "Phone:" .
+    htmlspciealchars($_POST["Phone"]) . "\n" .
+                    "Message" .
+    htmlspecialchars($_POST["Message"]) . "\n";
+
+    $mail->send();
+    echo "Merci, votre message à bien envoyé";
+
+} catch (Exception $e) {
+    echo "Erreur. Veuillez recommencer." . $mail->ErrorInfo;
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" translate="no">
 
@@ -103,18 +145,18 @@
 
  
   <div class="form">
-  <form action="#">
+  <form action="index.php" method="POST">
     <div  id="out" class="barmenu2">
       <div class="bar"></div>
     </div>
     <h2>Contact me</h2>
     <fieldset class="contact-me">
-      <input type="text" id="name" name="Name" placeholder="Name" required>
-      <input type="email" id="email" name="Email" placeholder="Email" required>
+      <input type="text" id="name" name="Name" placeholder="Name *" required>
+      <input type="email" id="email" name="Email" placeholder="Email*" required>
       <input type="tel" id="phone" name="Phone" placeholder="Phone">
     </fieldset>
     <fieldset class="contact-me">
-      <textarea name="" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message" required></textarea>
+      <textarea name="Message" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message *" required></textarea>
       <input type="submit" value="Send">
     </fieldset >
   </form>
@@ -136,10 +178,10 @@
   </script>
 
   <script src="./script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js">
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
   </script>
-  <script src="./email.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script src="./email.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
   <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 
 </body>

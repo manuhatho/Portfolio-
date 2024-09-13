@@ -10,16 +10,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 const footerVisible = document.querySelectorAll('.nav-link3');
 // console.log(footerVisible);
 const footer = document.querySelector('.footer');

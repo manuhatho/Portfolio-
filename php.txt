@@ -1,0 +1,38 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    //je collecte les données du formulaire
+    $Name = htmlspecialchars($_POST['Name']);
+    $Email = htmlspecialchars($_POST['Email'])
+    $Message = htmlspcecialchars($_POST['Message']);
+
+    //Adresse mail où je recois le message
+    $to = "graphicdesign00home@gmail.com";
+
+    //sujet de l'email
+    $subject = "Nouveau message via le formulaire de ton Portfolio";
+
+    //corps de l'email
+    $message = "Full Name" . $Name ."\n" . 
+                "Email" . $Email . "\n" . 
+                "content" . $Message . "\n";
+
+    //Entêtes de l'email
+    $headers = "From:
+    manuhatho-portfolio.onrender.com\r\n" .
+                "Reply-To:
+    manuhatho-portfolio.onrender.com\r\n" .
+                "X-Mailer: PHP/" .
+    phpversion();
+
+    // Envoi de l'email
+    if(mail($to, $subject, $message, $headers)){
+
+        echp "Votre message a bien été envoyé.";
+
+    } else {
+        echo"Erreur lors de l'envoi de votre message. Veuillez réessayer.";
+    }
+
+}
+?>
