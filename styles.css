@@ -951,8 +951,10 @@ input[type="submit"]:hover {
 
     }
 
-    .nav2::-webkit-scrollbar {
+    header .nav2::-webkit-scrollbar {
         width: 0;
+       
+     
     }
 
     .nav2 a {
