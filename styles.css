@@ -65,6 +65,10 @@ body::-webkit-scrollbar {
 
 }
 
+.prevent-overflowX {
+    overflow-x: hidden;
+}
+
 
 #preloader {
     background: black url(./giphy.gif) no-repeat center center;
@@ -392,7 +396,7 @@ header nav ul li a {
     border-radius: 100px;
     backdrop-filter: blur(50px);
     padding-top: 50px;
-    background-color:   rgba(20, 16, 16, 0.26); 
+    background-color:   rgba(0, 0, 0, 0.349); 
     top: -50px;
  
     
@@ -634,7 +638,7 @@ header nav ul li a {
     right: 0;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: block;
 }
 .projects-content .projects .img{
@@ -1240,6 +1244,9 @@ input[type="submit"]:hover {
         max-width: 100%;
        
         
+    }
+    .projects-content{
+        max-width: 100%;
     }
 
     header nav,
