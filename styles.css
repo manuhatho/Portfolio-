@@ -1129,7 +1129,8 @@ input[type="submit"]:hover {
         padding-bottom: 150px;
     }
     .heroContainer {
-        padding: 50px 0;
+        padding: 30px 0;
+        padding-top: 0 !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
