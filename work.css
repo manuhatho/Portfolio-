@@ -11,7 +11,7 @@ header .first::before{
 
 main {
     padding-top: 150px;
-    background: url(b2.jpg);
+    background: url(b3.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -124,8 +124,9 @@ main::before{
     font-family: "afa";
    background-color:transparent;
    border: none;
-   color: white;
+   color: black;
     cursor: pointer;
+    text-decoration: underline;
 
 }
 
@@ -220,6 +221,9 @@ main::before{
         bottom: 85px;
         right: 10px;
         z-index: 1;
+    }
+    main{
+        padding-bottom: 130px;
     }
 }
 

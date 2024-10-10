@@ -1,0 +1,268 @@
+
+/* -------------------------------------WEB DESIGN---------------------------------------------------------- */
+
+.prevent-overflowX {
+    overflow-x: hidden;
+}
+
+header .first::before{
+    bottom: -17px;
+}
+
+main {
+    padding-top: 150px;
+    background: url(b2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+
+
+}
+
+
+
+.gallery-1 {
+    position: relative;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+   justify-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 90%;
+    padding:30px;
+    margin: 0 auto;
+    margin-top: 100px;
+  
+
+    
+}
+.gallery-1:hover{
+    background-position: right center;
+
+}
+
+
+
+.gallery-1 .img{
+    width: 100%;
+   
+  
+}
+.gallery-1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+   transition: 0.25s ;
+}
+
+
+.gallery-1 .img-btn {
+    width: 100%;
+    max-width: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   
+}
+.gallery-1 .img-btn button:hover{
+    background-position: right center;
+    transform: translateY(-5px);
+  
+}
+
+
+.gallery-1 .img-btn button {
+    font-family: "caviarB";
+    padding:10px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-weight: 560;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+    background-image: linear-gradient(to right, rgb(224, 11, 85) 0%, rgb(123, 5, 98) 50%, rgb(190, 46, 190) 100%);
+    background-size: 200% auto;
+    transition: 0.25s ease;
+}
+
+.gallery-1::after {
+    content: "";
+    width: 500px;
+    
+
+}
+
+
+.next {
+    position:absolute;
+    bottom: 22px;
+    right: 100px;
+    z-index: 1;
+}
+
+.next  img{
+    height: 30px;
+    vertical-align:text-bottom;
+  
+    
+}
+.next button{
+    padding: 10px;
+    font-family: "afa";
+   background-color:transparent;
+   border: none;
+   color: white;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+.previous {
+    position:absolute;
+    bottom: 22px;
+    left: 100px;
+    z-index: 1;
+}
+.previous img{
+    height: 30px;
+    vertical-align:text-bottom;
+    transform: scaleX(-1) !important;
+  
+    
+}
+
+
+.arrow{
+    width: 35px;
+    height: 45px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    scale: 0.6;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    display: none;
+    transition: 0.25s;
+    
+   
+}
+.arrow:hover {
+    scale: 1;
+}
+.arrow .top, .arrow::before, .arrow::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: rgb(245, 35, 98);
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.arrow .top {
+    transform: rotate(90deg);
+    border-radius: 0 40px 40px 0;
+} 
+
+.arrow::before {
+    transform: rotate(45deg) translate(9px, -6px);
+    border-radius: 0 40px 40px 0;
+}
+ .arrow::after {
+    transform: rotate(-45deg) translate(5px, -20px);
+    border-radius:  40px 0 0 40px
+}
+
+
+
+
+/* Responsive Dg------------------------------------------------------ */
+
+* 2xl */
+@media (max-width:1327px){}
+
+/* xl */
+
+@media (max-width:1280px){}
+
+/* lg */
+
+
+
+/* md */
+
+
+
+@media (max-width:768px){}
+
+/* sm */
+@media (max-width:640px){}
+
+@media (max-width:620px){
+    
+    .gallery-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
+@media (max-width:530px){
+
+    .nav-mobile .first::before{
+       bottom: -15px;
+    
+    
+    }
+    .gallery-1 {
+        margin-top: 0;
+    }
+    .next {
+        position:absolute;
+        bottom: 85px;
+        right: 10px;
+        z-index: 1;
+    }
+    .previous {
+        position:absolute;
+        bottom: 85px;
+        left: 10px;
+        z-index: 1;
+    }
+    main{
+        padding-bottom: 130px;
+    }
+}
+
+/* xs */
+@media (max-width:475px){
+    .gallery-1 .img{
+        height: auto;
+        
+    }
+    .gallery-1 img{
+        height: auto;
+        
+    }
+    
+}
+
+@media (max-width:280px){
+ 
+
+
+}
+/* PAGE Wd------------------------------------------------------------ */
+

@@ -40,7 +40,7 @@
     font-family: "caviar";
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 body.active{
     overflow-y: hidden !important;
