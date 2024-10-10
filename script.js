@@ -10,14 +10,7 @@
 
 
 
-const footerVisible = document.querySelectorAll('.nav-link3');
-// console.log(footerVisible);
-const footer = document.querySelector('.footer');
-const Mfooter = document.querySelector('footer');
-// console.log(Mfooter);
-// console.log(footer);
-const nav = document.querySelector(".nav2");
-// console.log(nav);
+
 
 
  
@@ -36,29 +29,31 @@ function exitContact(){
  }
  exitContact();
 
-footerVisible.forEach((contact, index) => {
-    if (index === 2 || index === 0) {
-        contact.addEventListener("click", function () {
-            console.log('je click sur index 2');
-            event.stopPropagation(); 
-            footer.classList.toggle('footer-toggle');
-            Mfooter.classList.toggle('footer-toggle');
-        });
-    }
+ function footer(){
+    const footerVisible = document.querySelectorAll('.nav-link3');
+    const footer = document.querySelector('.footer');
+    const Mfooter = document.querySelector('footer');
+    const blend = document.querySelector('.blend');
+    
 
-    if (index === 1) {
-        contact.addEventListener("click", function () {
-            console.log('je click sur index 1');
-            footer.classList.remove('footer-toggle');
-            Mfooter.classList.remove('footer-toggle');
-        });
-    }
+
+footerVisible.forEach((contact) => {
+
+    contact.addEventListener("click", function (event) {
+        event.stopPropagation(); 
+        footer.classList.toggle('footer-toggle');
+        Mfooter.classList.toggle('footer-toggle');
+    });
+
+    blend.addEventListener("click", function () {
+        footer.classList.remove('footer-toggle');
+        Mfooter.classList.remove('footer-toggle');
+    });
 });
 
-document.querySelector("body").addEventListener("click",function(){
-    footer.classList.remove('footer-toggle');
-    Mfooter.classList.remove('footer-toggle');
-})
+ }
+footer();
+
 
 
 

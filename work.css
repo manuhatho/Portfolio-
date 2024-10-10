@@ -212,6 +212,9 @@ main::before{
     
     
     }
+    .gallery-1 {
+        margin-top: 0;
+    }
     .next {
         position:absolute;
         bottom: 85px;
