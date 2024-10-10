@@ -27,6 +27,7 @@ function exitContact(){
     })
 
  }
+
  exitContact();
 
  function footer(){
@@ -45,22 +46,20 @@ footerVisible.forEach((contact) => {
         footer.classList.toggle('footer-toggle');
         Mfooter.classList.toggle('footer-toggle');
         blend.classList.toggle("active");
-        body.classList.add('active');
+        body.classList.toggle('active');
     });
 
     blend.addEventListener("click", function () {
+        body.classList.remove('active');
         footer.classList.remove('footer-toggle');
         Mfooter.classList.remove('footer-toggle');
         blend.classList.remove("active");
-        body.classList.remove('active');
     });
 });
 
  }
+
 footer();
-
-
-
 
 
 
@@ -115,64 +114,12 @@ buttonV2.forEach((button, index) => {
 })
 
 
-const bar = document.querySelector(".barmenu");
-// console.log(bar);
-
-const header = document.querySelector("header");
-
-const white= document.getElementById("white");
-const body = document.querySelector("body");
-
-var scroolTopValue = 400;
-
-nav.scrollTop = scroolTopValue;
-
-bar.addEventListener("click", function() {
-    // console.log('click');
-    body.classList.toggle("active");
-    bar.classList.toggle("active");
-    nav.classList.toggle("active");
-    header.classList.toggle("active");
-    white.classList.toggle("active");
-
-});
 
 
 
 
 
-window.addEventListener("scroll", function() {
-    // console.log('scroll');
-    if (window.scrollY > 0) {
-        header.style.background = "white";
-    }
-    else {
-        header.style.background = "transparent";
-    }
-
-})
 
 
-//  document.oncontextmenu = function(){
-//      return false;
-//  }
-
- const arrow = document.querySelector(".arrow");
- 
- arrow.addEventListener("click",function(){
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    })
- })
-
- window.addEventListener("scroll", function(){
-    if (window.scrollY>200){
-        arrow.style.display = "block"
-
-    } else {
-        arrow.style.display = "none"
-    }
- })
 
 
