@@ -1,5 +1,7 @@
 /* -------------------------------FOOTER-------------------------------- */
-
+body.active {
+    overflow-y: hidden;
+}
 .blend {
     display: none;
 }
@@ -24,7 +26,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 3;
     transform: translateY(100px);
     transition: 0.4s ease;
     padding: 10px 0;
@@ -192,19 +194,21 @@ footer .icon {
        
         
     }
-    .blend{
-        content: "";
+    .blend.active{
+        display: block;
         position: absolute;
         width: 100%;
         min-height: 110vh;
         background-color: rgba(0, 0, 0, 0.24);
         backdrop-filter: blur(8px);
         display: block;
-        top: -172px;
         z-index: -1;
         
         
     }
+
+
+
     .footer {
         top: 0;
         height: fit-content;

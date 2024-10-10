@@ -34,6 +34,7 @@ function exitContact(){
     const footer = document.querySelector('.footer');
     const Mfooter = document.querySelector('footer');
     const blend = document.querySelector('.blend');
+    const body= document.querySelector('body');
     
 
 
@@ -43,11 +44,15 @@ footerVisible.forEach((contact) => {
         event.stopPropagation(); 
         footer.classList.toggle('footer-toggle');
         Mfooter.classList.toggle('footer-toggle');
+        blend.classList.toggle("active");
+        body.classList.add('active');
     });
 
     blend.addEventListener("click", function () {
         footer.classList.remove('footer-toggle');
         Mfooter.classList.remove('footer-toggle');
+        blend.classList.remove("active");
+        body.classList.remove('active');
     });
 });
 

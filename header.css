@@ -81,7 +81,7 @@ header {
     position: sticky;
     background-color: transparent !important;
     top: 0;
-    z-index: 99;
+    z-index: 3;
     font-weight: bold;
    
    
@@ -375,6 +375,8 @@ input[type="submit"]:hover {
          left: 0;
          right: 0;
          margin: 0 auto;
+        
+         
      }
 
      header nav {
