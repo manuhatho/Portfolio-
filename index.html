@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google" content="notranslate" />
   <!-- <link rel="stylesheet" href="index.CSS"> -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="home.css">
  
     <script src="https://unpkg.com/scrollreveal"></script>
   <title>PortFolio</title>
@@ -15,8 +17,6 @@
 
 <body>
 
-  <!-- <div id="preloader">
-  </div> -->
 <div class="prevent-overflowX">
   <header >
 
@@ -37,20 +37,21 @@
       </ul>
     </nav>
 
-    <!-- <div class="barmenu">
-      <div class="bar"></div>
-    </div> -->
+    
 
     </div>
 
   </header>
 
-  <!-- <div id="nav" class="nav2 nav-link3" >
-    <a class="nav-link" href="./index.html">Home</a>
-    <a class="nav-link" href="./My Work.html">My Work</a>
-    <a id="out" class="nav-link2" href="#">Contact me</a>
-    <a class="nav-link nav-link3" href="#">Infos</a>
-  </div> -->
+  <div class="nav-mobile">
+    <ul>
+      <li><a class="nav-link first " href="./index.html"><img  src="hom.png" alt=""></a></li>
+      <li><a class="nav-link" href="#work">My Work</a></li>
+      <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
+      <li><a class="nav-link nav-link3" href="#">Infos</a></li>
+    </ul>
+  </div>
+ 
 
   <main>
     <div class="hero">
@@ -81,8 +82,8 @@
       <h1>About Me</h1>
     <div class="about-content">
       <div class="text">
-        <p>My name is Manuella Tchemy Hatho, a Graphic Designer, Web Designer, and Front-end developer. Passionate about design and technology, i combine creativity with technical skills to craft visual and interactive experiences. Having worked on various web design projects, i am committed to continuously learning and refining my design and development abilities. My goal is to transform ideas into elegant, functional, and accessible digital solutions.</p>
-        <button class="contact"> Contact me</button>
+        <p class="paragrah">My name is Manuella Tchemy Hatho, a Graphic Designer, Web Designer, and Front-end developer. Passionate about design and technology, i combine creativity with technical skills to craft visual and interactive experiences. Having worked on various web design projects, i am committed to continuously learning and refining my design and development abilities. My goal is to transform ideas into elegant, functional, and accessible digital solutions.</p>
+        <button id="out" class="contact"> Contact me</button>
       </div>
       <div class="about-img">
         <img src="about.jpg" alt="">
@@ -100,17 +101,17 @@
             <h2>UI/UX Designs | Web Design
               <img src="ui-ux(1).png" alt="">
             </h2>
-              <p>I design intuitive user interfaces and seamless user experiences. My user-centered approach allows me to create interactive prototypes that meet real user needs. I use tools such as Adobe XD and Figma to develop wireframes and high-fidelity mockups, ensuring that each interface is both aesthetically pleasing and functional.
+              <p class="paragrah">I design intuitive user interfaces and seamless user experiences. My user-centered approach allows me to create interactive prototypes that meet real user needs. I use tools such as Adobe XD and Figma to develop wireframes and high-fidelity mockups, ensuring that each interface is both aesthetically pleasing and functional.
               </p>
-              <button class="contact"> contact me</button>
+              <button id="out" class="contact"> contact me</button>
           </div>
           <div class="block">
               <h2>Graphic Design
                 <img src="curve.png" alt="">
               </h2>
-              <p>With expertise in creating logos, brand guidelines, and visual materials, I master tools like Adobe Photoshop, Illustrator, and InDesign. I’ve worked on various projects ranging from branding to creating brochures, posters, logos, and digital media, while ensuring consistency with the brand’s visual identity. Each project is crafted with attention to detail to deliver strong, cohesive visuals.
+              <p class="paragrah">With expertise in creating logos, brand guidelines, and visual materials, I master tools like Adobe Photoshop, Illustrator, and InDesign. I’ve worked on various projects ranging from branding to creating brochures, posters, logos, and digital media, while ensuring consistency with the brand’s visual identity. Each project is crafted with attention to detail to deliver strong, cohesive visuals.
               </p>
-              <button  class="contact">contact me</button>
+              <button id="out"  class="contact">contact me</button>
           </div>
           <div class="block">
               <h2>Front-end development
@@ -120,8 +121,8 @@
                 <img src="js.png" alt="">
                 <img src="bootstrap.png" alt=""> -->
               </h2>
-              <p>I transform designs into fully functional websites using technologies such as HTML, CSS, JavaScript, and frameworks like Bootstrap. I also have experience optimizing websites for smooth and responsive navigation across different devices. My goal is to create high-performance, visually appealing interfaces with clean, maintainable code.</p>
-              <button  class="contact">contact me</button>
+              <p class="paragrah">I transform designs into fully functional websites using technologies such as HTML, CSS, JavaScript, and frameworks like Bootstrap. I also have experience optimizing websites for smooth and responsive navigation across different devices. My goal is to create high-performance, visually appealing interfaces with clean, maintainable code.</p>
+              <button id="out"  class="contact">contact me</button>
           </div>
       </div>
     </div>
@@ -129,7 +130,7 @@
 
   <div class="projects-section">
 
-    <div class="projects-content">
+    <div id="work" class="projects-content">
         <h1>Projects</h1>
         <div class="projects">
           <div class="box">
@@ -137,7 +138,7 @@
           <div class="img">
             <img src="11.jpg" alt="">
           </div>
-          <a href="">
+          <a href="work.html">
             <button>See more</button>
           </a>
         </div>
@@ -239,16 +240,18 @@
 
   <script>
       ScrollReveal({ 
-        reset: true,
-        distance: '60px',
+        reset: false,
+        distance: '40px',
         duration: 1200,
         delay: 50 
       });
 
-      ScrollReveal().reveal('h1', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('h1', { delay: 50, origin: 'top' });
       ScrollReveal().reveal('.btn', { delay: 50, origin: 'bottom' });
       ScrollReveal().reveal('.btn2', { delay: 50, origin: 'bottom' });
       ScrollReveal().reveal('.right-2', { delay: 50, origin: 'right' });
+      ScrollReveal().reveal('.paragrah', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
   </script>
 
   <script src="./script.js"></script>
@@ -258,8 +261,9 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
   <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 
+</div>
+
 </body>
 
-</div>
 
 </html>
