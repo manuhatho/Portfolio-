@@ -1,5 +1,9 @@
 {
     "require": {
-        "phpmailer/phpmailer": "*"
+      "php": "^7.4 || ^8.0",
+      "phpmailer/phpmailer": "^6.0"
+    },
+    "scripts": {
+      "start": "php -S 0.0.0.0:10000 -t public"
     }
-}
+  }
