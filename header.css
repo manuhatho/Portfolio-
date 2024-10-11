@@ -407,8 +407,27 @@ input[type="submit"]:hover {
         display: block;
     }
     
+    .nav-mobile {
+        padding: 14px !important;
+    }
+    .nav-mobile ul {
+        display: flex;
+        justify-content: space-around !important;
+    }
     .nav-mobile ul img {
-        height: 30px;
+        height: 25px;
+        vertical-align:middle;
+    }
+    .nav-mobile ul #pro {
+        height: 30px !important;
+        position: relative;
+        top: 3px;
+    }
+    .nav-mobile ul #pro2 {
+        height: 20px !important;
+    }
+    .nav-mobile ul #pro3 {
+        height: 22px !important;
     }
 
     .nav-mobile .first{
@@ -421,8 +440,8 @@ input[type="submit"]:hover {
         left: 0;
         margin: 0 auto;
         position: absolute;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         background-color: white ;
         display: block;
