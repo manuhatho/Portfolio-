@@ -1,6 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
@@ -8,10 +9,10 @@ try {
 
     // Configuration du serveur SMTP
     $mail->isSMTP();
-    $mail->Host = "smtp.mailgun.org"; // Serveur SMTP de Mailgun
+    $mail->Host = "smtp-relay.brevo.com"; // Serveur SMTP correct
     $mail->SMTPAuth = true; // Authentification SMTP activée
-    $mail->Username = "postmaster@sandboxfb5329d28e9a4137bef8345422b35a75.mailgun.org"; // SMTP login Mailgun
-    $mail->Password = "eb18f0b56940b256d0e3322d03a699ee-5dcb5e36-954e4ad4";  // Mot de passe Mailgun
+    $mail->Username = "7dc532001@smtp-brevo.com"; // SMTP login Brevo
+    $mail->Password = "Y2bdFAESZctrT0WM";  // Nouveau mot de passe
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Sécurité TLS
     $mail->Port = 587; // Port SMTP
 
