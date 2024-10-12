@@ -123,14 +123,14 @@ header nav {
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
-    font-family: "caviar";
+   
     font-size: 19px;
     background-color: rgba(71, 59, 59, 0.473);
     backdrop-filter: blur(8px);
     border-radius: 35px;
-    padding: 17px;
+    padding: 13px;
 }
 .nav-mobile {
     display: none;
@@ -176,6 +176,9 @@ header nav ul {
 
 header nav ul li a {
     color: white;
+    text-transform: uppercase;
+    font-family: "afa";
+  
 }
 
 
