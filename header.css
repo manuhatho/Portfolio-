@@ -311,6 +311,7 @@ form {
     height: auto;
     margin: 0 auto;
     opacity: 0;
+    top:0 !important;
     transition: 0.1s cubic-bezier(.86, 0, .07, 1);
     transform: scale(0);
     overflow-y: scroll;
