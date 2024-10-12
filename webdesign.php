@@ -218,6 +218,12 @@
 
 </div>
 
+<script src="./script.js"></script>
+  <script src="./alert.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
 <script>
   function spinner() {
     const formulaire = document.querySelector("form");
@@ -232,45 +238,22 @@
 spinner();
 </script>
 
-
-  <script src="script.js"></script>
-    <script>
+  <script>
       ScrollReveal({ 
         reset: false,
         distance: '40px',
-        duration: 1000,
+        duration: 1200,
         delay: 50 
       });
 
-      ScrollReveal().reveal('.header', { delay: 50, origin: 'top' });
-      ScrollReveal().reveal('.img-btn', { delay: 50, origin: 'bottom'});
-     
-    </script>
+      ScrollReveal().reveal('h1', { delay: 50, origin: 'top' });
+      ScrollReveal().reveal('.btn', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.btn2', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.right-2', { delay: 50, origin: 'right' });
+      ScrollReveal().reveal('.paragrah', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
+  </script>
 
-    <script>
-      const buttonV2 = document.querySelectorAll('.d-voir');
-// console.log(buttonV2);
-
-buttonV2.forEach((button, index) => {
-    button.addEventListener("mouseover", ()=> {
-        // console.log('over');
-        const imageContainer = document.querySelectorAll(".img-btn");
-        const image = imageContainer[index].querySelector('img');
-        image.style.transform = "scale(0.9)";
-    })
-    button.addEventListener("mouseout", ()=> {
-        // console.log('out');
-        const imageContainer = document.querySelectorAll(".img-btn");
-        const image = imageContainer[index].querySelector('img');
- 
-        image.style.transform = "scale(1)";
-    })
-
-
-})
-    </script>
-
-<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 <script>
 const lenis = new Lenis({
 duration: 1.2,
@@ -319,12 +302,6 @@ requestAnimationFrame(raf)
 requestAnimationFrame(raf)
 </script>
 
-
-<!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
-</script>
-<!-- <script src="./email.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-<script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

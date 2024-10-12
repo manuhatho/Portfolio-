@@ -262,6 +262,13 @@
 
 </div>
 
+
+  <script src="./script.js"></script>
+  <script src="./alert.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
 <script>
   function spinner() {
     const formulaire = document.querySelector("form");
@@ -292,11 +299,6 @@ spinner();
       ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
   </script>
 
-  <script src="./script.js"></script>
-  <script src="./alert.js"></script>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 <script>
 const lenis = new Lenis({
 duration: 1.2,
@@ -344,13 +346,8 @@ requestAnimationFrame(raf)
 }
 requestAnimationFrame(raf)
 </script>
-  <!-- <script src="./email.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-  <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
-  <script>
-    
-  </script>
 
+  
 
 </body>
 

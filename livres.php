@@ -164,6 +164,12 @@
 
 </div>
 
+<script src="./script.js"></script>
+  <script src="./alert.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
 <script>
   function spinner() {
     const formulaire = document.querySelector("form");
@@ -178,12 +184,70 @@
 spinner();
 </script>
 
+  <script>
+      ScrollReveal({ 
+        reset: false,
+        distance: '40px',
+        duration: 1200,
+        delay: 50 
+      });
 
-    <script src="./script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script src="./email.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      ScrollReveal().reveal('h1', { delay: 50, origin: 'top' });
+      ScrollReveal().reveal('.btn', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.btn2', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.right-2', { delay: 50, origin: 'right' });
+      ScrollReveal().reveal('.paragrah', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
+  </script>
+
+<script>
+const lenis = new Lenis({
+duration: 1.2,
+easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+direction: 'vertical', // vertical, horizontal
+gestureDirection: 'vertical', // vertical, horizontal, both
+smooth: true,
+mouseMultiplier: 1,
+smoothTouch: false,
+touchMultiplier: 2,
+infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+<script>
+const lenis = new Lenis({
+duration: 1.2,
+easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+direction: 'vertical', // vertical, horizontal
+gestureDirection: 'vertical', // vertical, horizontal, both
+smooth: true,
+mouseMultiplier: 1,
+smoothTouch: false,
+touchMultiplier: 2,
+infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+</script>
+
 </body>
 
 </html>

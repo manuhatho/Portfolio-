@@ -302,6 +302,11 @@
 
 </div>
 
+<script src="./script.js"></script>
+  <script src="./alert.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 
 <script>
   function spinner() {
@@ -317,27 +322,22 @@
 spinner();
 </script>
 
-<!-- </div> -->
+  <script>
+      ScrollReveal({ 
+        reset: false,
+        distance: '40px',
+        duration: 1200,
+        delay: 50 
+      });
 
+      ScrollReveal().reveal('h1', { delay: 50, origin: 'top' });
+      ScrollReveal().reveal('.btn', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.btn2', { delay: 50, origin: 'bottom' });
+      ScrollReveal().reveal('.right-2', { delay: 50, origin: 'right' });
+      ScrollReveal().reveal('.paragrah', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
+  </script>
 
-
-
-
-</body>
-
-<script>
-  ScrollReveal({ 
-    reset: false,
-    distance: '40px',
-    duration: 1000,
-    delay: 50 
-  });
-
-  ScrollReveal().reveal('.header', { delay: 50, origin: 'top' });
-  ScrollReveal().reveal('.img-btn', { delay: 50, origin: 'bottom' });
- 
-</script>
-<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
 <script>
 const lenis = new Lenis({
 duration: 1.2,
@@ -385,12 +385,6 @@ requestAnimationFrame(raf)
 }
 requestAnimationFrame(raf)
 </script>
-
-<script src="./script.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script src="./email.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 
