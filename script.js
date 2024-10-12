@@ -13,22 +13,29 @@
 
 
 
- 
-function exitContact(){
+function exitContact() {
     const out = document.querySelectorAll("#out");
-    const formulaire = document.querySelector("form")
-    out.forEach(function(index){
-        const form = document.querySelector(".form");
-        index.addEventListener("click",function(){
-            console.log('click');
+    const formulaire = document.querySelector("form");
+    const body= document.querySelector('body');
+    const form = document.querySelector(".form");
+
+    out.forEach(function(index) {
+        index.addEventListener("click", function(event) {
+            event.stopPropagation();
             form.classList.toggle("active");
             formulaire.classList.toggle("active");
-        })
-    })
 
- }
+            // Ajout de l'overflow: hidden quand le formulaire est actif
+            if (form.classList.contains("active") || formulaire.classList.contains("active")) {
+                body.classList.add('active');
+            } else {
+                body.classList.remove('active');
+            }
+        });
+    });
+}
 
- exitContact();
+exitContact();
 
  function footer(){
     const footerVisible = document.querySelectorAll('.nav-link3');

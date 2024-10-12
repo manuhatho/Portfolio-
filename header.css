@@ -45,8 +45,11 @@ html, body{
 }
 
 body.active{
-    overflow-y: hidden !important;
+    position: fixed;
+    width: 100%;
+    overflow: hidden !important;
 }
+
 
 
 body::-webkit-scrollbar {
@@ -350,8 +353,8 @@ input {
     border-radius: 10px;
     font-family: 'caviarB';
     position: relative;
-    left: 0;
-    right: 0;
+    left:50%;
+    transform: translateX(-50%);
 
 
 }
@@ -524,5 +527,10 @@ input {
     background-color: transparent;
     backdrop-filter: blur(100px);
     display: block;
+}
+
+.submit {
+    left:0;
+    transform: translateX(0);
 }
 }   
