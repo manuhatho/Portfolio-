@@ -65,8 +65,8 @@
 
     <nav>
       <ul>
-        <li><a class="nav-link first " href="./index.php"><img  src="hom.png" alt=""></a></li>
-        <li><a class="nav-link" href="#work">My Work</a></li>
+        <li><a class="nav-link" href="./index.php"><img  src="hom.png" alt=""></a></li>
+        <li><a class="nav-link first" href="#work">My Work</a></li>
         <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
         <li><a class="nav-link nav-link3" href="#">Infos</a></li>
       </ul>
@@ -80,8 +80,8 @@
 
   <div class="nav-mobile">
     <ul>
-      <li><a class="nav-link first " href="./index.php"><img  src="hom.png" alt=""></a></li>
-      <li><a class="nav-link" href="#work"><img id="pro" src="gestion-de-projet.png" alt=""></a></li>
+      <li><a class="nav-link  " href="./index.php"><img  src="hom.png" alt=""></a></li>
+      <li><a class="nav-link first" href="#work"><img id="pro" src="gestion-de-projet.png" alt=""></a></li>
       <li><a id="out" class="nav-link nav-link2" href="#"><img id="pro2" src="lettre.png" alt=""></a></li>
       <li><a class="nav-link nav-link3" href="#"><img id="pro3" src="contact.png" alt=""></a></li>
     </ul>
