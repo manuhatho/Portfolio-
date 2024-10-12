@@ -220,7 +220,7 @@
 
 <script src="./script.js"></script>
   <script src="./alert.js"></script>
-  <script src="js/fullscreen.js"></script>
+  <script src="./fullscreen.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
   <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 
