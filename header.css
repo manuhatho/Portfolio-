@@ -435,26 +435,26 @@ input {
     }
     
     .nav-mobile {
-        padding: 14px !important;
+        padding: 10px !important;
     }
     .nav-mobile ul {
         display: flex;
         justify-content: space-around !important;
     }
     .nav-mobile ul img {
-        height: 25px;
+        height: 20px;
         vertical-align:middle;
     }
     .nav-mobile ul #pro {
-        height: 30px !important;
+        height: 25px !important;
         position: relative;
         top: 3px;
     }
     .nav-mobile ul #pro2 {
-        height: 20px !important;
+        height: 15px !important;
     }
     .nav-mobile ul #pro3 {
-        height: 22px !important;
+        height: 16px !important;
     }
 
     .nav-mobile .first{
