@@ -289,7 +289,7 @@
     &times
   </span>
 
-  <strong>Thanks you ! <font> Your message has been send succesfuly !</font></strong>
+  <strong>Thanks you ! <font> Your message has been send succesfuly</font></strong>
 
 </div>
 
@@ -308,19 +308,7 @@
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
   <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
 
-<script>
-  function spinner() {
-    const formulaire = document.querySelector("form");
-    const spinner = document.getElementById("loading-spinner");
-    
-    
-    formulaire.addEventListener("submit", ()=> {
-        spinner.style.display = "block";
-    });
-    
-}
-spinner();
-</script>
+
 
   <script>
       ScrollReveal({ 
