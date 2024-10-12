@@ -32,8 +32,8 @@
 
     <nav>
       <ul>
-        <li><a class="nav-link  " href="./index.html"><img  src="hom.png" alt=""></a></li>
-        <li><a class="nav-link first" href="work.html">My Work</a></li>
+        <li><a class="nav-link  " href="./index.php"><img  src="hom.png" alt=""></a></li>
+        <li><a class="nav-link first" href="work.php">My Work</a></li>
         <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
         <li><a class="nav-link nav-link3" href="#">Infos</a></li>
       </ul>
@@ -47,8 +47,8 @@
 
   <div class="nav-mobile">
     <ul>
-      <li><a class="nav-link  " href="./index.html"><img  src="hom.png" alt=""></a></li>
-      <li><a class="nav-link first" href="work.html">My Work</a></li>
+      <li><a class="nav-link  " href="./index.php"><img  src="hom.png" alt=""></a></li>
+      <li><a class="nav-link first" href="work.php">My Work</a></li>
       <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
       <li><a class="nav-link nav-link3" href="#">Infos</a></li>
     </ul>
@@ -74,7 +74,7 @@
   
         <div class=" previous next">
                 
-          <a href="webdesign.html">
+          <a href="webdesign.php">
             <img id="" src="enter 1.png" alt="">
             <button>FRONT-END | WEB DESIGN</button>
           </a>
@@ -123,35 +123,60 @@
       </footer>
     </div>
       
-  <div class="form">
-    <form action="contactme.php" method="post" >
-      <div  id="out" class="barmenu2">
-        <div class="bar"></div>
-      </div>
-      <h2>Contact me</h2>
-      <fieldset class="contact-me">
-        <input type="text" id="name" name="Name" placeholder="Name" required>
-        <input type="email" id="email" name="Email" placeholder="Email" required>
-        <input type="tel" id="phone" name="Phone" placeholder="Phone">
-      </fieldset>
-      <fieldset class="contact-me">
-        <textarea name="" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message" required></textarea>
-        <input type="submit" value="Send">
-      </fieldset >
-    </form>
-  </div>
-    <!-- <script>
-      ScrollReveal({ 
-        reset: true,
-        distance: '40px',
-        duration: 1000,
-        delay: 50 
-      });
+    <div class="form">
+  <form action="contactme.php" method="post" >
+    <div  id="out" class="barmenu2">
+      <div class="bar"></div>
+    </div>
+    <h2>Contact me</h2>
+    <fieldset class="contact-me">
+      <input type="text" id="name" name="Name" placeholder="Name *" required>
+      <input type="email" id="email" name="Email" placeholder="Email*" required>
+      <input type="tel" id="phone" name="Phone" placeholder="Phone">
+    </fieldset>
+    <fieldset class="contact-me">
+      <textarea name="Message" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message *" required></textarea>
+      <button class="submit" type="submit">
 
-      ScrollReveal().reveal('.header', { delay: 50, origin: 'top' });
-      ScrollReveal().reveal('.img-btn', { delay: 50, origin: 'bottom'});
-     
-  </script> -->
+        <div id="loading-spinner" class="spinner">
+        </div>
+           Send
+      </button>
+    </fieldset >
+  </form>
+</div>
+   
+<div id="success-alert" class=" alert alert-success" style="display: <?php echo isset($_GET['success']) && $_GET['success'] == 'true' ? 'block' : 'none'; ?>; ">
+  <span class="close-btn" onclick="this.parentElement.style.display='none';">
+    &times
+  </span>
+
+  <strong>Thanks you ! <font> Your message has been send succesfuly !</font></strong>
+
+</div>
+
+<div id="error-alert" class=" alert alert-error" style="display: <?php echo isset($_GET['success']) && $_GET['success'] == 'false' ? 'block' : 'none'; ?>;">
+  <span class="close-btn" onclick="this.parentElement.style.display='none';">
+    &times
+  </span>
+   <strong>Sorry</strong> <font>: Try again later.</font>
+</div>
+
+</div>
+
+<script>
+  function spinner() {
+    const formulaire = document.querySelector("form");
+    const spinner = document.getElementById("loading-spinner");
+    
+    
+    formulaire.addEventListener("submit", ()=> {
+        spinner.style.display = "block";
+    });
+    
+}
+spinner();
+</script>
 
 
     <script src="./script.js"></script>

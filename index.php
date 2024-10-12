@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="alert.css">
  
     <script src="https://unpkg.com/scrollreveal"></script>
   <title>PortFolio</title>
@@ -17,12 +18,12 @@
 
 <body>
 
-<div class="prevent-overflowX">
+<!-- <div class="prevent-overflowX"> -->
   <header >
 
     <div class="headerContent">
       <div class="logo">
-        <a href="./index.html">
+        <a href="./index.php">
           <h1>Portfolio</h1>
          </a>
       </div>
@@ -30,7 +31,7 @@
 
     <nav>
       <ul>
-        <li><a class="nav-link first " href="./index.html"><img  src="hom.png" alt=""></a></li>
+        <li><a class="nav-link first " href="./index.php"><img  src="hom.png" alt=""></a></li>
         <li><a class="nav-link" href="#work">My Work</a></li>
         <li><a id="out" class="nav-link nav-link2" href="#">Contact me</a></li>
         <li><a class="nav-link nav-link3" href="#">Infos</a></li>
@@ -69,7 +70,7 @@
             </div>
            
             <div class="right right-2">
-              <img  src="./Plan de travail 11.png" alt="" />
+              <img  src="./Plan de travail 11.png"  loading="lazy" alt="" />
     
             </div>
           </div>
@@ -86,7 +87,7 @@
         <button id="out" class="btn-contact"> Contact me</button>
       </div>
       <div class="about-img">
-        <img src="about.jpg" alt="">
+        <img src="about.jpg"  loading="lazy" alt="">
       </div>
     </div>
   </div>
@@ -136,27 +137,27 @@
           <div class="box">
           <h2>Graphic Design</h2>
           <div class="img">
-            <img src="11.jpg" alt="">
+            <img src="11.jpg"   loading="lazy" alt="">
           </div>
-          <a href="work.html">
+          <a href="work.php">
             <button>See more</button>
           </a>
         </div>
         <div class="box">
           <h2>Responsive web design</h2>
          <div class="img">
-          <img src="3w.jpg" alt="">
+          <img src="3w.jpg"  loading="lazy" alt="">
          </div>
-          <a href="webdesign.html">
+          <a href="webdesign.php">
             <button>See more</button>
           </a>
         </div>
         <div class="box">
           <h2>Illustration</h2>
           <div class="img">
-            <img src="C.jpg" alt="">
+            <img src="C.jpg"  loading="lazy" alt="">
           </div>
-          <a href="livres.html">
+          <a href="livres.php">
             <button>See more</button>
           </a>
         </div>
@@ -233,11 +234,47 @@
     </fieldset>
     <fieldset class="contact-me">
       <textarea name="Message" id="message" cols="30" rows="1" style="resize: none; border: none; border-bottom:1px solid;" placeholder="Message *" required></textarea>
-      <input type="submit" value="Send">
+      <button class="submit" type="submit">
+
+        <div id="loading-spinner" class="spinner">
+        </div>
+           Send
+      </button>
     </fieldset >
   </form>
 </div>
 
+<div id="success-alert" class=" alert alert-success" style="display: <?php echo isset($_GET['success']) && $_GET['success'] == 'true' ? 'block' : 'none'; ?>; ">
+  <span class="close-btn" onclick="this.parentElement.style.display='none';">
+    &times
+  </span>
+
+  <strong>Thanks you ! <font> Your message has been send succesfuly !</font></strong>
+
+</div>
+
+<div id="error-alert" class=" alert alert-error" style="display: <?php echo isset($_GET['success']) && $_GET['success'] == 'false' ? 'block' : 'none'; ?>;">
+  <span class="close-btn" onclick="this.parentElement.style.display='none';">
+    &times
+  </span>
+   <strong>Sorry</strong> <font>: Try again later.</font>
+</div>
+
+</div>
+
+<script>
+  function spinner() {
+    const formulaire = document.querySelector("form");
+    const spinner = document.getElementById("loading-spinner");
+    
+    
+    formulaire.addEventListener("submit", ()=> {
+        spinner.style.display = "block";
+    });
+    
+}
+spinner();
+</script>
 
   <script>
       ScrollReveal({ 
@@ -256,8 +293,57 @@
   </script>
 
   <script src="./script.js"></script>
+  <script src="./alert.js"></script>
   <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
   </script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+<script>
+const lenis = new Lenis({
+duration: 1.2,
+easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+direction: 'vertical', // vertical, horizontal
+gestureDirection: 'vertical', // vertical, horizontal, both
+smooth: true,
+mouseMultiplier: 1,
+smoothTouch: false,
+touchMultiplier: 2,
+infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+<script>
+const lenis = new Lenis({
+duration: 1.2,
+easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+direction: 'vertical', // vertical, horizontal
+gestureDirection: 'vertical', // vertical, horizontal, both
+smooth: true,
+mouseMultiplier: 1,
+smoothTouch: false,
+touchMultiplier: 2,
+infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+</script>
   <!-- <script src="./email.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
   <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
@@ -265,7 +351,6 @@
     
   </script>
 
-</div>
 
 </body>
 

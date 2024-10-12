@@ -31,10 +31,13 @@ try {
     htmlspecialchars($_POST["Message"]) . "\n";
 
     $mail->send();
-    header("Location:index.html");
+    header("Location:index.php?success=true");
+    exit();
 
 } catch (Exception $e) {
-    echo "Erreur. Veuillez recommencer. " . $mail->ErrorInfo;
+   header("Location:index.php?success=false");
+   exit();
 }
 
 ?>
+

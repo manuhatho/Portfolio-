@@ -4,7 +4,7 @@
 
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     width: 100%;
     min-height: 110vh;
     font-size: 19px;
@@ -13,7 +13,7 @@ body {
 }
 
 .prevent-overflowX {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 main {
@@ -718,6 +718,9 @@ text-align: center;
     .projects-content .projects .img::after {
        display: none;
     }
+
+    
+
 
 }
 
