@@ -24,7 +24,9 @@ main::before{
     height: 100%;
     top: 0;
     background-color: transparent;
-    /* backdrop-filter: blur(100px); */
+    backdrop-filter: blur(100rem);
+  
+
 
 
 }
