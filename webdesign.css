@@ -11,7 +11,7 @@ header .first::before{
 
 main {
     padding-top: 150px;
-    background: url(b2.jpg);
+    background: url(b2-1.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -24,7 +24,7 @@ main::before{
     height: 100%;
     top: 0;
     background-color: transparent;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
 
 
 }
