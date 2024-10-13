@@ -729,7 +729,9 @@ text-align: center;
         min-height: 130vh;
     }     
 
-  
+    .projects-content .projects .img::after {
+       display: none;
+    }
 
     
 
