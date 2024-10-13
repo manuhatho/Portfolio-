@@ -164,7 +164,7 @@ main {
     max-width: 70%;
     margin: 0 auto;
     border-radius: 100px;
-    backdrop-filter: blur(100rem);
+    backdrop-filter: blur(20rem);
     padding-top: 50px;
     background-color:   rgba(0, 0, 0, 0.349); 
     top: -150px;
@@ -338,7 +338,7 @@ main {
     max-width: fit-content;
     padding: 50px;
     margin: 0 auto;
-    background: url(project.jpg);
+    background: url(project-1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color:  rgba(20, 16, 16, 0.329); 
@@ -368,7 +368,7 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgba(124, 56, 56, 0.295);
-    backdrop-filter: blur(50rem);
+    backdrop-filter: blur(10rem);
     top: 0;
     left: 0;
     right: 0;
