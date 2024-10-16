@@ -173,13 +173,14 @@
         </h1>
         <div class="icons">
           <img src="figma.png" alt="">
-          <img src="xd.png" alt="">
           <img src="photoshop.png" alt="">
           <img src="illustrator.png" alt="">
+          <img src="indesign.png" alt="">
+          <img src="xd.png" alt="">
            <img src="html-5.png" alt="">
            <img src="css.png" alt="">
             <img src="js.png" alt="">
-             <img src="bootstrap.png" alt=""> 
+  
         </div>
       </div>
     </div>
@@ -287,7 +288,7 @@
       ScrollReveal().reveal('.btn', { delay: 50, origin: 'bottom' });
       ScrollReveal().reveal('.btn2', { delay: 50, origin: 'bottom' });
       ScrollReveal().reveal('.right-2', { delay: 50, origin: 'right' });
-      ScrollReveal().reveal('.paragrah', { delay: 50, origin: 'left' });
+      ScrollReveal().reveal('.block', { delay: 50, origin: 'left' });
       ScrollReveal().reveal('.img', { delay: 50, origin: 'left' });
   </script>
 
