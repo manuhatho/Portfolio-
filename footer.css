@@ -267,7 +267,7 @@ footer .icon {
         padding: 0 5px;
     }
 
-    fieldset {
+    .footer fieldset {
         border-left: none;
         border-top: 1px solid #000000a9;
         width: 100%;
