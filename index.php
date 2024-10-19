@@ -185,14 +185,18 @@
       </div>
     </div>
 
+    <div class="blend"></div>
     <div class="footer">
 
       <footer>
-        <div class="blend"></div>
         <div class="content">
           <div class="left">
             <h2 class="contact">Contacts</h2>
-            <p>graphicdesignhome00@gmail.com</p>
+            <p>
+              <img class="let" height="15"src="lettre-2.png" alt="">
+              graphicdesignhome00@gmail.com
+
+            </p>
             <p>+237 677 83 70 22</p>
             <p>+237 620 65 34 14</p>
           </div>
@@ -211,7 +215,7 @@
               </div>
               <p class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Bafoussam Cameroon</p>
+                Yaoundé Cameroon</p>
               
             </div>
           </fieldset>

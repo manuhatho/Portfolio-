@@ -13,7 +13,7 @@ body.active {
 
 .footer {
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-family: "caviar";
     font-weight: 800;
     width: 100%;
@@ -66,7 +66,7 @@ footer .contact::after {
     content: "";
     height: 2px;
     width: 40px;
-    background-color: #fff;
+    background-color:rgb(225, 5, 93);
     display: block;
     position: absolute;
     left: 0;
@@ -85,7 +85,7 @@ footer .social::after {
     content: "";
     height: 2px;
     width: 80px;
-    background-color: #fff;
+    background-color: rgb(225, 5, 93);
     display: block;
     position: absolute;
     left: 0;
@@ -101,18 +101,22 @@ footer .social:hover::after {
 }
 
 footer h2 {
-    background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
+    -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    color:  rgb(225, 5, 93);
     position: relative;
+
 
 
 }
 
 footer p {
-    background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
+    /* background: -webkit-linear-gradient(45deg, rgba(3, 255, 255, 0.753)0%, rgba(255, 96, 141, 0.855) 51%, rgb(246, 148, 246)100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    font-family: calibri;
+    color: black;
 }
 
 footer .left {
@@ -144,15 +148,21 @@ footer .icon {
 
 
 
-.fa-brands {
 
-    color: white;
+.fa-brands {
+    
+    
     margin-right: 5px;
+    
+}
+.fa-whatsapp{
+    color: rgb(28, 100, 28);
 
 }
 
+
 .fa-location-dot {
-    color: white;
+    color: rgb(225, 5, 93);
     display: inline-block;
     vertical-align: center;
 
@@ -188,24 +198,20 @@ footer .icon {
 }
 @media (max-width:530px){
 
-    footer{
-        position: relative;
-        opacity: 1;
-       
-        
-    }
+    
     .blend.active{
         display: block;
         position: fixed;
         width: 100%;
+        top: 0;
         margin: 0 auto;
         left: 0;
         right: 0;
         min-height: 110vh;
-        background-color: rgba(0, 0, 0, 0.24);
+        background-color: rgba(0, 0, 0, 0.349);
         backdrop-filter: blur(8px);
         display: block;
-        z-index: -1;
+    
         
         
     }
@@ -216,11 +222,19 @@ footer .icon {
         top: 0;
         height: fit-content;
         transform: translateY(-200px);
+       
+       
+       
     }
     
     .footer.footer-toggle {
         opacity: 1 !important;
         transform: translateY(0) !important;
+        border-radius: 0 0 30px 30px;
+        padding: 30px;
+      
+       
+      
     
     }
     footer.footer-toggle {
@@ -255,10 +269,11 @@ footer .icon {
 
     fieldset {
         border-left: none;
-        border-top: 1px solid #ffffffa9;
+        border-top: 1px solid #000000a9;
         width: 100%;
         text-align: center;
         margin-top: 10px;
+        padding-top: 10px;
     }
 
     .left {

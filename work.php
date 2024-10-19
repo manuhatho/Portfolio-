@@ -226,38 +226,44 @@
         
       </main>
       
-      <div class="footer">
-        <div class="blend"></div>
-        <footer>
-          <div class="content">
-            <div class="left">
-              <h2 class="contact">Contacts</h2>
-              <p>graphicdesignhome00@gmail.com</p>
-              <p>+237 677 83 70 22</p>
-              <p>+237 620 65 34 14</p>
-            </div>
-           
-            <fieldset>
+      <div class="blend"></div>
+    <div class="footer">
+
+      <footer>
+        <div class="content">
+          <div class="left">
+            <h2 class="contact">Contacts</h2>
+            <p>
+              <img class="let" height="15"src="lettre-2.png" alt="">
+              graphicdesignhome00@gmail.com
+
+            </p>
+            <p>+237 677 83 70 22</p>
+            <p>+237 620 65 34 14</p>
+          </div>
+         
+          <fieldset>
+
+            <div class="right">
+              <h2 class="social">Social Networks</h2>
+              <div class="icon">
+                <a href="https://m.facebook.com/profile.php?id=100091936671884&mibextid=ZbWKwL&wtsid=rdr_0Bo7ifBrVOprNb9e1"
+                  target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/gdesign_home?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/message/3LZSIWEK3NDXC1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/manuhatho"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Yaoundé Cameroon</p>
               
-              <div class="right">
-                <h2 class="social">Social Networks</h2>
-                <div class="icon">
-                  <a href="https://m.facebook.com/profile.php?id=100091936671884&mibextid=ZbWKwL&wtsid=rdr_0Bo7ifBrVOprNb9e1"
-                    target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://instagram.com/gdesign_home?utm_source=qr&igshid=OGU0MmVlOWVjOQ%3D%3D" target="_blank"><i
-                      class="fa-brands fa-instagram"></i></a>
-                  <a href="https://wa.me/message/3LZSIWEK3NDXC1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                  <a href="https://github.com/manuhatho"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <p class="location">
-                  <i class="fa-solid fa-location-dot"></i>
-                  Bafoussam Cameroon</p>
-                  
-                </div>
-              </fieldset>
             </div>
-          </footer>
+          </fieldset>
         </div>
+      </footer>
+    </div>
+    </div>
         
         
         
