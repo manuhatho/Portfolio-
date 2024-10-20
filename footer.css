@@ -264,6 +264,9 @@ footer .icon {
         height: 100% !important;
     
     }
+    .footer::before {
+        display: none;
+    }
 }
 
 @media (max-width:475px) {
