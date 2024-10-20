@@ -31,9 +31,23 @@ body.active {
     transform: translateY(100px);
     transition: 0.4s ease;
     padding: 10px 0;
-
+    border-radius: 50px 0 50px 0;
+    
 }
 
+.footer::before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background-color: white;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
 
 
 
@@ -136,7 +150,7 @@ footer .right {
 
 .footer fieldset {
     border: none;
-    border-left: 1px solid #ffffff;
+  
     
 
 }
@@ -164,7 +178,7 @@ footer .icon {
 }
 
 .fa-github {
-    color: rgb(206, 128, 100);
+    color: rgb(225, 5, 93);
 }
 
 
