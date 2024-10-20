@@ -320,6 +320,10 @@ form {
    
 }
 
+.contact-me {
+    border: none !important;
+}
+
 
 form::-webkit-scrollbar {
     width: 0;
@@ -484,6 +488,7 @@ input {
     
     }
 
+
     
     .nav-mobile ul {
         display: flex;
@@ -533,8 +538,5 @@ input {
     display: block;
 }
 
-.submit {
-    left:0;
-    transform: translateX(0);
-}
+
 }   

@@ -13,7 +13,8 @@ body.active {
 
 .footer {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(50px);
     font-family: "caviar";
     font-weight: 800;
     width: 100%;
@@ -66,7 +67,7 @@ footer .contact::after {
     content: "";
     height: 2px;
     width: 40px;
-    background-color:rgb(225, 5, 93);
+    background-color:rgb(206, 57, 117);
     display: block;
     position: absolute;
     left: 0;
@@ -77,7 +78,7 @@ footer .contact::after {
 
 footer .contact:hover::after {
     transition: 0.25s ease;
-    background-color: rgb(225, 5, 93);
+    background-color: rgb(206, 57, 117);
     width: 85px;
 }
 
@@ -85,7 +86,7 @@ footer .social::after {
     content: "";
     height: 2px;
     width: 80px;
-    background-color: rgb(225, 5, 93);
+    background-color: rgb(206, 57, 117);
     display: block;
     position: absolute;
     left: 0;
@@ -116,7 +117,8 @@ footer p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
     font-family: calibri;
-    color: black;
+    
+    color: white;
 }
 
 footer .left {
@@ -132,9 +134,10 @@ footer .right {
 
 }
 
-fieldset {
+.footer fieldset {
     border: none;
-    border-left: 1px solid #ffffffa9;
+    border-left: 1px solid #ffffff;
+    
 
 }
 
@@ -160,6 +163,10 @@ footer .icon {
 
 }
 
+.fa-github {
+    color: rgb(206, 128, 100);
+}
+
 
 .fa-location-dot {
     color: rgb(225, 5, 93);
@@ -167,6 +174,8 @@ footer .icon {
     vertical-align: center;
 
 }
+
+
 
 .fa-download {
     color: rgb(0, 0, 0);
@@ -269,7 +278,7 @@ footer .icon {
 
     .footer fieldset {
         border-left: none;
-        border-top: 1px solid #000000a9;
+        border-top: 1px solid #ffffffa9;
         width: 100%;
         text-align: center;
         margin-top: 10px;

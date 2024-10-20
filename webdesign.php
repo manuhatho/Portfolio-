@@ -172,7 +172,7 @@
               </div>
               <p class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Yaoundé Cameroon</p>
+                Yaounde Cameroon</p>
               
             </div>
           </fieldset>

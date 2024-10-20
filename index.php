@@ -193,7 +193,7 @@
           <div class="left">
             <h2 class="contact">Contacts</h2>
             <p>
-              <img class="let" height="15"src="lettre-2.png" alt="">
+              <img class="let" height="15"src="lettre.png" alt="">
               graphicdesignhome00@gmail.com
 
             </p>
@@ -215,7 +215,7 @@
               </div>
               <p class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Yaoundé Cameroon</p>
+                Yaounde Cameroon</p>
               
             </div>
           </fieldset>

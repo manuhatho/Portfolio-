@@ -256,7 +256,7 @@
               </div>
               <p class="location">
                 <i class="fa-solid fa-location-dot"></i>
-                Yaoundé Cameroon</p>
+                Yaounde Cameroon</p>
               
             </div>
           </fieldset>
@@ -306,7 +306,6 @@
    <strong>Sorry</strong> <font>: Try again later.</font>
 </div>
 
-</div>
 
 <script src="./script.js"></script>
   <script src="./alert.js"></script>
